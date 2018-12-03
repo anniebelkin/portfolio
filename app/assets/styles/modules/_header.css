@@ -1,0 +1,49 @@
+/* _header.css */
+
+.header {
+    width: 100%;
+    height:auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px;
+    @mixin atSmall{
+            padding-bottom: 0;
+        }
+    @mixin clearfix;
+    
+    &__content {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        @mixin atSmall{
+            top: 20px;
+        }
+    }
+    
+    &__image {
+        float: left;
+        position: relative;
+        max-width: 400px;
+        height: auto;
+        top: 20px;
+        @mixin atSmall{
+            top:0;
+        }
+    }
+    
+    &__title {
+        text-align: right;
+    }
+
+    
+    &__contact {
+        position: relative;
+        text-align: right;
+        top : 10%;
+        right:10px;
+        @mixin atMedium{
+            text-align : center;
+        }
+    } 
+    
+}

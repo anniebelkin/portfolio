@@ -1,0 +1,87 @@
+/* _headline.css */
+
+.headline {
+    
+    padding: 0;
+    margin: 0;
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-shadow: 0.2px 0.2px 1px $grey-Blue;
+    
+    @mixin atSmall{
+            font-size: 1.8rem;
+            text-shadow: 0.5px 0.5px 1.5px $grey-Blue;
+        }
+    
+    @mixin atMedium{
+            font-size: 2.4rem;
+            text-shadow: 1px 1px 2px $grey-Blue;
+        }
+    
+    @mixin atLarge{
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 4px $grey-Blue;
+        }
+    
+    &--primery {
+        font-size: 1.2rem;
+        font-weight: 900;
+        padding: 2px;
+        
+        @mixin atSmall{
+            font-size: 2.0rem;
+        }
+        
+        @mixin atMedium{
+            font-size: 2.6rem;
+        }
+        
+        @mixin atLarge{
+            font-size: 3.0rem;
+        }
+    }
+    
+    &--secondary {
+        font-size: 0.8rem;
+        font-weight: 900;
+        
+        @mixin atSmall{
+            font-size: 1.4rem;
+        }
+        
+        @mixin atMedium{
+            font-size: 1.8rem;
+        }
+        
+        @mixin atLarge{
+            font-size: 2.2rem;
+        }
+    }
+    
+    &--left {
+        text-align: left;
+    }
+    
+    &--right {
+        text-align: right;
+    }
+    
+    &--orange {
+        color: $mainOrange-Darker;
+    }
+    
+    &--pink {
+        color: $mainPink-Darker;
+    }
+    
+    &--blue {
+        color: $mainBlue-Darker;
+        
+        &--brighter {
+        color: $mainBlue-Dark;
+        }
+    }
+    
+    
+    
+}

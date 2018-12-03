@@ -354,8 +354,289 @@ template {
   display: none;
 }
 
+/* _var.css */
+
+/* _mixins.css */
+
+/* _global.css */
+
 body{
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
     background: url(../../assets/img/background.jpg) repeat top left;
-    padding: 20px;
+    max-width: 960px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #55A0E8;
+    padding: 10px;
 }
+
+@media (min-width:  800px ){
+
+body{
+        padding: 0px
+}
+    }
+
+hr {
+    background-color: #CEBCC6;
+    border:none;
+    height: 2px;
+    margin: 5px -10px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
+       -moz-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
+            box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
+    
+}
+
+@media (min-width: 600px ){
+
+hr {
+            height: 4px
+    
+}
+    }
+
+@media (min-width:  800px ){
+
+hr {
+            height: 6px;
+            margin: 5px 0
+    
+}
+    }
+
+/* _headline.css */
+
+.headline {
+    
+    padding: 0;
+    margin: 0;
+    font-size: 1.0rem;
+    font-weight: 600;
+    text-shadow: 0.2px 0.2px 1px #989FA6;
+    
+    
+    
+}
+
+@media (min-width: 600px ){
+
+.headline {
+            font-size: 1.8rem;
+            text-shadow: 0.5px 0.5px 1.5px #989FA6
+    
+    
+    
+}
+    }
+
+@media (min-width:  800px ){
+
+.headline {
+            font-size: 2.4rem;
+            text-shadow: 1px 1px 2px #989FA6
+    
+    
+    
+}
+    }
+
+@media (min-width: 1000px ){
+
+.headline {
+            font-size: 2.8rem;
+            text-shadow: 2px 2px 4px #989FA6
+    
+    
+    
+}
+    }
+
+.headline--primery {
+        font-size: 1.2rem;
+        font-weight: 900;
+        padding: 2px;
+    }
+
+@media (min-width: 600px ){
+
+.headline--primery {
+            font-size: 2.0rem
+    }
+    }
+
+@media (min-width:  800px ){
+
+.headline--primery {
+            font-size: 2.6rem
+    }
+    }
+
+@media (min-width: 1000px ){
+
+.headline--primery {
+            font-size: 3.0rem
+    }
+    }
+
+.headline--secondary {
+        font-size: 0.8rem;
+        font-weight: 900;
+    }
+
+@media (min-width: 600px ){
+
+.headline--secondary {
+            font-size: 1.4rem
+    }
+    }
+
+@media (min-width:  800px ){
+
+.headline--secondary {
+            font-size: 1.8rem
+    }
+    }
+
+@media (min-width: 1000px ){
+
+.headline--secondary {
+            font-size: 2.2rem
+    }
+    }
+
+.headline--left {
+        text-align: left;
+    }
+
+.headline--right {
+        text-align: right;
+    }
+
+.headline--orange {
+        color: #FFA450;
+    }
+
+.headline--pink {
+        color: #F34CA7;
+    }
+
+.headline--blue {
+        color: #55A0E8;
+    }
+
+.headline--blue--brighter {
+        color: #78AFE4;
+        }
+
+/* _btn.css */
+
+.btn {
+    background-color: #CEBCC6;
+    border: 1px solid #F34CA7; 
+    color: #F34CA7;
+    padding: 5px 10px;
+    margin: 15px;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+       -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 600px ){
+
+.btn {
+            padding: 5px 15px
+}
+    }
+
+@media (min-width:  800px ){
+
+.btn {
+            padding: 5px 20px
+}
+    }
+
+@media (min-width: 1000px ){
+
+.btn {
+            padding: 5px 25px
+}
+    }
+
+.btn:hover {
+    background-color: #F34CA7;
+    border: 1px solid #CEBCC6; 
+    color: #CEBCC6;
+}
+
+/* _header.css */
+
+.header {
+    width: 100%;
+    height:auto;
+    position: relative;
+    text-align: center;
+    padding-bottom: 10px; 
+    
+}
+
+@media (min-width: 600px ){
+
+.header {
+            padding-bottom: 0 
+    
+}
+    }
+
+.header::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+.header__content {
+        position: absolute;
+        right: 0;
+        height: 100%;
+    }
+
+@media (min-width: 600px ){
+
+.header__content {
+            top: 20px
+    }
+    }
+
+.header__image {
+        float: left;
+        position: relative;
+        max-width: 400px;
+        height: auto;
+        top: 20px;
+    }
+
+@media (min-width: 600px ){
+
+.header__image {
+            top:0
+    }
+    }
+
+.header__title {
+        text-align: right;
+    }
+
+.header__contact {
+        position: relative;
+        text-align: right;
+        top : 10%;
+        right:10px;
+    }
+
+@media (min-width:  800px ){
+
+.header__contact {
+            text-align : center
+    }
+    }
