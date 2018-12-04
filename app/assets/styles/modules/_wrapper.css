@@ -4,14 +4,22 @@
     
     padding: 10px;
     
-    &--large{
-        
-        padding: 10px;
+    &--vertical {
+        padding-top: 10px;
+        padding-bottom: 10px;
         @mixin atSmall{
-            padding: 10px 30px;
-        }
-        
-        
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }   
+    }
+    
+    &--horizontal {
+        padding-left: 10px;
+        padding-right: 10px;
+        @mixin atSmall{
+            padding-left: 30px;
+            padding-right: 30px;
+        }  
     }
 
 }

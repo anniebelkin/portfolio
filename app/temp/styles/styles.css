@@ -393,8 +393,7 @@ hr {
     background-color: #CEBCC6;
     border:none;
     height: 2px;
-    margin: 0 0px;
-    margin-top: 10px;
+    margin: 0;
     -webkit-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
        -moz-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
             box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
@@ -495,6 +494,9 @@ hr {
 .headline--secondary {
         font-size: 0.8rem;
         font-weight: 900;
+        padding-top: 5px;
+        
+
 
     }
 
@@ -502,14 +504,8 @@ hr {
 
 .headline--secondary {
             font-size: 1.4rem
+        
 
-    }
-    }
-
-@media (min-width:  800px ){
-
-.headline--secondary {
-            font-size: 1.8rem
 
     }
     }
@@ -586,19 +582,29 @@ hr {
 
 }
 
-.wrapper--large{
-        
-        padding: 10px;
-        
-        
+.wrapper--vertical {
+        padding-top: 10px;
+        padding-bottom: 10px;   
     }
 
 @media (min-width: 600px ){
 
-.wrapper--large{
-            padding: 10px 30px
-        
-        
+.wrapper--vertical {
+            padding-top: 30px;
+            padding-bottom: 30px   
+    }
+    }
+
+.wrapper--horizontal {
+        padding-left: 10px;
+        padding-right: 10px;  
+    }
+
+@media (min-width: 600px ){
+
+.wrapper--horizontal {
+            padding-left: 30px;
+            padding-right: 30px  
     }
     }
 
@@ -702,4 +708,42 @@ hr {
         content: "";
         clear: both;
         display: table;
+    }
+
+/* _small-business.css */
+
+.small-business {
+    background-color: rgba(0,0,0,0.7);
+    width:100%;
+    position: relative;
+    color: #F2F4F6;
+    min-height:80px;
+    
+}
+
+.small-business__content {
+        min-height:inherit;
+        display: table;
+    }
+
+@media (min-width: 600px ){
+
+.small-business__content {
+            min-width: 100%
+    }
+    }
+
+.small-business__title {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        
+    }
+
+.small-business__image {
+        left:10px;
+        top:-5%;
+        position: absolute;
+        height:130%;
+        width:auto;
     }
