@@ -52,10 +52,7 @@
         @mixin atMedium{
             font-size: 1.8rem;
         }
-        
-        @mixin atLarge{
-            font-size: 2.2rem;
-        }
+
     }
     
     &--left {

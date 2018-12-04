@@ -1,0 +1,17 @@
+/* _wrapper.css */
+
+.wrapper {
+    
+    padding: 10px;
+    
+    &--large{
+        
+        padding: 10px;
+        @mixin atSmall{
+            padding: 10px 30px;
+        }
+        
+        
+    }
+
+}

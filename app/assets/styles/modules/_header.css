@@ -5,7 +5,6 @@
     height:auto;
     position: relative;
     text-align: center;
-    padding-bottom: 10px;
     @mixin atSmall{
             padding-bottom: 0;
         }
@@ -13,7 +12,7 @@
     
     &__content {
         position: absolute;
-        right: 0;
+        right: 10px;
         height: 100%;
         @mixin atSmall{
             top: 20px;
