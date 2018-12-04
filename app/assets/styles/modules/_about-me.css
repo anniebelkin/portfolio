@@ -2,6 +2,7 @@
     background-color: $white-Pink;
     width: 100%;
     text-align: center;
+    color: $mainBlue-Darker;
     
     &__image{
         max-width: 100%;

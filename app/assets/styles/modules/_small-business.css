@@ -31,6 +31,7 @@
         position: absolute;
         height:130%;
         width:auto;
+        z-index: 2;
     }
     
 }
