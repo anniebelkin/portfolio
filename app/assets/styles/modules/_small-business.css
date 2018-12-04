@@ -25,13 +25,4 @@
         
     }
     
-    &__image {
-        left:10px;
-        top:-5%;
-        position: absolute;
-        height:130%;
-        width:auto;
-        z-index: 2;
-    }
-    
 }

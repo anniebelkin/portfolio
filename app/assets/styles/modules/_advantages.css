@@ -9,33 +9,6 @@
         color: $mainPink-Darker;
     }
     
-    &__seperator{
-        min-height: 100px;
-        position: absolute;
-        bottom:0;
-        
-        @mixin atSmall{
-            min-height: 150px;
-        }
-        
-        @mixin atMedium{
-            min-height: 180px
-        }
-        
-        @mixin atLarge{
-            min-height: 200px;
-        }
-    }
-    
-    
-    &__image {
-        position: absolute;
-        max-height: 130%;
-        width:auto;
-        top:-10%;
-        right: 10px;
-    }
-    
     &__small-placeholder {
         margin-right: 30%;
         
