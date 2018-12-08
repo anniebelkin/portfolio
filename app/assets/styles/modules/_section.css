@@ -1,0 +1,55 @@
+/* _section.css */
+
+.section {
+    min-height:80px;
+    width: 100%;
+    text-align: right;
+    position: relative;
+    
+    &--pink {
+        background-color: $white-Pink;
+    }
+    
+    &--blue {
+        background-color: rgba($mainBlue, 0.3);
+    }
+    
+    &--dark {
+        background-color: rgba(0,0,0,0.7);
+    }
+    
+    &--orange {
+        background-color: rgba($pale-Orange, 0.3);
+    }
+    
+    &--pink-dark {
+        background-color: rgba($brown-Pink, 0.5);
+    }
+    
+    
+    &__content {
+        min-height:inherit;
+        display: table;
+        min-width: 100%;
+        
+        &--center{
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+    
+    &__box {
+        border: 2px solid $mainPink-Dark;
+        display: inline-block;
+        border-radius:10%;
+    }
+    
+    &__inline {
+        
+    }
+    
+    &__clearfix {
+        @mixin clearfix;
+    }
+
+}

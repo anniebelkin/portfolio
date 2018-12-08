@@ -19,6 +19,13 @@
     @mixin atLarge{
             padding: 5px 25px;
         }
+    
+    &__logo {
+        max-height:inherit;
+        width:auto;
+        padding: 0 2px;
+    }
+
 }
 
 .btn:hover {
@@ -26,3 +33,4 @@
     border: 1px solid $brown-Pink; 
     color: $brown-Pink;
 }
+

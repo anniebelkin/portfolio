@@ -1,0 +1,22 @@
+/* _navbar.css */
+
+.navbar {
+    min-height: 30px;
+    max-height: 30px;
+    width: 100%;
+    max-width: 960px;
+    position: fixed;
+    background-color: rgba($brown-Pink, 0.8);
+    
+    z-index: 5;
+    
+    &--top {
+        top:0;
+        border-bottom: 1px solid $brown-Pink;
+    }
+    
+    &--bottom {
+        bottom: 0;
+        border-top: 1px solid $brown-Pink;
+    }
+}

@@ -6,12 +6,14 @@
 body{
     
     background: url(../../assets/img/background.jpg) repeat top left;
+    color: $mainBlue-Darker;
     width:100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
-    color: $mainBlue-Darker;
+    
+    
     
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
     font-size: 0.9rem;
@@ -19,5 +21,12 @@ body{
     @mixin atSmall{
             font-size: 1.2rem;
     }
+    
+    @mixin atMedium {
+        border: 1px solid rgba($brown-Pink, 0.8);
+        box-shadow: 15px 10px 10px rgba($brown-Pink, 0.3);
+    }
         
 }
+
+

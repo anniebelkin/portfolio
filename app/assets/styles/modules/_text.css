@@ -1,0 +1,49 @@
+/* _text.css */
+
+.text {
+    
+    &--pink {
+        color: $mainPink-Darker;
+    }
+    
+    &--white {
+        color: $white-Blue;
+    }
+    
+    &--grey {
+        color: $grey-Blue;
+    }
+    
+    &--orange {
+        color: $mainOrange-Darker;
+    }
+    
+    &--brighter-blue {
+        color: $mainBlue-Dark;
+    }
+    
+    &--left {
+        text-align: left;
+    }
+    
+    &--right {
+        text-align: right;
+    }
+    
+    &--center {
+        text-align: center;
+    }
+    
+    &--center-atSmall{
+        @mixin atSmall{
+            text-align: center;
+        }
+    }
+    
+    &--small{
+        font-size: 0.8rem;
+        @mixin atSmall {
+            font-size: 1.0rem;
+        }
+    }
+}

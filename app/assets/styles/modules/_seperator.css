@@ -1,12 +1,12 @@
 /* _seperator.css */
 
-hr {
+.seperator {
+    
     background-color: $brown-Pink;
     border:none;
     height: 2px;
     margin: 0;
     box-shadow: 0 2px 4px 0 rgba($brown-Pink, 0.5);
-    
     
     
     @mixin atSmall{
@@ -17,55 +17,5 @@ hr {
             height: 6px;
             margin: 0;
         }
-    
-}
 
-.seperator {
-    
-    min-height: 100px;
-    position: absolute;
-    bottom:0;
-    
-    &--left {
-        left:0;
-    }
-    
-    &--right {
-        right:0;
-    }
-    
-    @mixin atSmall{
-        min-height: 150px;
-    }
-        
-    @mixin atMedium{
-        min-height: 180px
-    }
-        
-    @mixin atLarge{
-        min-height: 200px;
-    }
-    
-    &__image {
-        position:absolute;
-        min-height: 130%;
-        max-height: 130%;
-        width:auto;
-        z-index: 2;
-        top: -5%;
-        
-        &--left {
-           left: 10px; 
-        }
-        
-        &--right {
-            right: 10px;
-        }
-        
-        &--higher {
-            top: -10%;
-        }
-        
-    }
-    
 }
