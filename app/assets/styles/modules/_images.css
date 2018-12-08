@@ -65,13 +65,20 @@
         height: auto;
     }
     
+    &__icons {
+        max-width: 50%;
+        height: auto;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     &__inside-content{
         max-width: 100%;
         height: auto;
-        float:left;
-        padding-bottom: 15px;
         
         @mixin atMedium{
+            float:left;
             max-width:30%;
             padding-right: 20px;
             padding-bottom: 0;
