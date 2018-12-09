@@ -402,6 +402,11 @@ body{
 }
     }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* _headline.css */
 
 .headline {
@@ -570,6 +575,20 @@ body{
         padding: 0 2px;
     }
 
+.btn__secondary {
+        
+        background-color: transparent;
+        border: 1px solid #F5B8D9; 
+        color: #F5B8D9;
+    }
+
+.btn__submit {
+        
+        width: 35%;
+        border: 1px solid #F34CA7; 
+        
+    }
+
 .btn:hover {
     background-color: #F34CA7;
     border: 1px solid #CEBCC6; 
@@ -644,10 +663,9 @@ body{
 /* _row.css */
 
 .row {
-    
     width: 100%;
     height: auto;
-    
+
 }
 
 .row::after {
@@ -656,8 +674,22 @@ body{
         display: table;
     }
 
+.row__col-sm-3 {
+        margin-top: 5px;
+        float:right;
+        width: 100%;
+    }
+
+@media (min-width: 600px ){
+
+.row__col-sm-3 {
+            margin-top: 10px;
+            width: 25%
+    }
+    }
+
 .row__col-sm-6 {
-        
+        margin-top: 5px;
         float:right;
         width: 100%;
         
@@ -666,16 +698,24 @@ body{
 @media (min-width: 600px ){
 
 .row__col-sm-6 {
+            margin-top: 10px;
             width: 50%
         
     }
     }
 
-.row__col-9 {
-        
+.row__col-sm-9 {
+        margin-top: 5px;
         float:right;
-        width:75%;
-        
+        width: 100%;
+    }
+
+@media (min-width: 600px ){
+
+.row__col-sm-9 {
+            margin-top: 10px;
+            width: 75%
+    }
     }
 
 /* _images.css */
@@ -964,16 +1004,15 @@ body{
             vertical-align: middle;
         }
 
-.section__box {
-        border: 2px solid #F075B9;
-        display: inline-block;
+.section__border {
         -webkit-border-radius:10%;
            -moz-border-radius:10%;
                 border-radius:10%;
+        border: 2px solid #F075B9;
     }
 
-.section__inline {
-        
+.section__box {
+        display: inline-block;
     }
 
 .section__clearfix::after {
@@ -981,3 +1020,35 @@ body{
         clear: both;
         display: table;
     }
+
+/* _forms.css */
+
+form {
+    width:100%;
+    max-width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+}
+
+@media (min-width: 600px ){
+
+form {
+        width:80%;
+        max-width:80%
+}
+    }
+
+input {
+    width: 100%;
+    text-align: center;
+    background-color: #F2F4F6;
+}
+
+textarea { 
+    /* will prevent resizing horizontally */
+    resize:vertical;
+    width: 100%;
+    text-align: center;
+    background-color: #F2F4F6;
+}

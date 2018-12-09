@@ -1,0 +1,27 @@
+/* _forms.css */
+
+form {
+    width:100%;
+    max-width:100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 10px;
+    @mixin atSmall {
+        width:80%;
+        max-width:80%;
+    }
+}
+
+input {
+    width: 100%;
+    text-align: center;
+    background-color: $white-Blue;
+}
+
+textarea { 
+    /* will prevent resizing horizontally */
+    resize:vertical;
+    width: 100%;
+    text-align: center;
+    background-color: $white-Blue;
+}

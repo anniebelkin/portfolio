@@ -302,7 +302,7 @@
             </p>
             
             <div class="">
-                <p class="section__box wrapper">
+                <p class="section__box section__border wrapper">
                     <strong class="headline headline--secondary">תמיכה מלאה</strong> - 100 ש"ח לשנה<br>
                     חבילה הכוללת תמיכה מלאה, <br>
                     עריכת תוכן ועדכונים, <br>
@@ -310,7 +310,7 @@
                 </p>
             </div>
             <div class="">
-                <p class="section__box wrapper">
+                <p class="section__box section__border wrapper">
                     <strong class="headline headline--secondary">תוכנית קטנה</strong> - 500 ש"ח<br>
                     בניית האתר בלבד כאשר <br>
                     יש עיצוב ותוכן מוכנים.<br>
@@ -319,7 +319,7 @@
                 </p>
             </div>
             <div class="">
-                <p class="section__box wrapper">
+                <p class="section__box section__border wrapper">
                     <strong class="headline headline--secondary">תוכנית מלאה</strong> - 1000 ש"ח<br>
                     בניית אתר מאפס, <br>
                     כולל תוכן ועיצוב.<br>
@@ -348,11 +348,70 @@
         
     <div id="contact" class="section section--dark text--white wrapper--bottom">
         <hr class="seperator">
-        <div class="text--center wrapper--vertical">
-            <h2 class="headline">צרו קשר</h2>
-            <p>
-                 אנה בלקין - 0526838435<br>
-            </p>
+        <div class="text--center wrapper--vertical wrapper--horizontal">
+            <form>
+            <fieldset class="section__border">
+                <legend align="center" class="headline wrapper">צרו קשר</legend> 
+                <p>
+                    אנה בלקין <br>
+                    באר שבע, דרום ישראל
+                </p>
+                <img src="assets/img/github.png" alt="github">
+                <img src="assets/img/linkedin.png" alt="linked in">
+                <img src="assets/img/chat.png" alt="facebook chat">
+                <img src="assets/img/facebook.png" alt="facebook">
+                <br><br>
+                <hr>
+                <h4 class="headline headline--secondary"> קורות חיים </h4>
+                <button type="button" class="btn"><a href="/images/myw3schoolsimage.jpg" download>עברית</a></button>
+                <button type="button" class="btn"><a  href="/images/myw3schoolsimage.jpg" download>אנגלית</a></button><br>
+
+                <hr>
+                <h4 class="headline headline--secondary"> שלחו לי הודעה </h4>
+                <hr>
+                
+                <div clas="row">
+                    <div class="row__col-sm-3">
+                    <label for="name">שם מלא:</label>
+                    </div>
+                    <div class="row__col-sm-9">
+                    <input type="text" id="name" name="fullname" placeholder="שמך המלא" required>
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="row__col-sm-3">
+                    <label for="phone">פלאפון נייד:</label>
+                    </div>
+                    <div class="row__col-sm-9">
+                    <input type="tel" id="phone" name="phone" placeholder="מספר הטלפון הנייד שלכם" pattern="[0-9]{10}">
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="row__col-sm-3">
+                    <label for="email">דואר אלקטרוני:</label>
+                    </div>
+                    <div class="row__col-sm-9">
+                    <input type="email" id="email" name="email" placeholder="האימייל שלכם" required><br>
+                    </div>
+                </div>
+                <div clas="row">
+                    <div class="row__col-sm-3">
+                    <label for="subject">נושא הפנייה:</label>
+                    </div>
+                    <div class="row__col-sm-9">
+                    <textarea id="subject" name="subject" role="textbox" rows="5" placeholder="כתבו משהו..." required></textarea>
+                    </div>
+                </div>
+                
+                <div class="text--left">
+                    <button type="reset" class="btn btn__secondary">אפס</button>
+                    <button type="submit" class="btn btn__submit headline headline--secondary">שלח</button>
+                </div>
+                
+                
+            </fieldset>
+            </form>
+
         </div><!-- wrapper -->
         <div id="" class="wrapper--horizontal section__clearfix">
             <source srcset="assets/img/playful-cat-large.png" media="(min-width:1000px)">

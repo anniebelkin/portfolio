@@ -25,6 +25,20 @@
         width:auto;
         padding: 0 2px;
     }
+    
+    &__secondary {
+        
+        background-color: transparent;
+        border: 1px solid $mainPink; 
+        color: $mainPink;
+    }
+    
+    &__submit {
+        
+        width: 35%;
+        border: 1px solid $mainPink-Darker; 
+        
+    }
 
 }
 
