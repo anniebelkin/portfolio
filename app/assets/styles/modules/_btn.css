@@ -21,7 +21,7 @@
         }
     
     &__logo {
-        max-height:inherit;
+        max-height:30px;;
         width:auto;
         padding: 0 2px;
     }
@@ -40,11 +40,11 @@
         
     }
 
-}
-
-.btn:hover {
-    background-color: $mainPink-Darker;
-    border: 1px solid $brown-Pink; 
-    color: $brown-Pink;
+    &:hover {
+        background-color: $mainPink-Darker;
+        border: 1px solid $brown-Pink; 
+        color: $brown-Pink;
+        cursor:pointer;
+    }
 }
 

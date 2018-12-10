@@ -10,18 +10,27 @@
     <link rel="icon" href="assets/img/logo.png">
 
     <title>Annie Moore</title>
-<head>
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 
 <body>
     
-    <header id="header" class="wrapper--top">
+    <header id="anchor_header" class="wrapper--top">
         
         <navbar class="navbar navbar--top">
             
-            <a class="btn__logo" href="#header"><img class="btn__logo" src="assets/img/full-logo.png" alt="logo"></a>
+            <a id="logo" class="btn__logo" href="#anchor_header"><img class="btn__logo" src="assets/img/full-logo.png" alt="logo"></a>
             
+            <div class="navbar__menu-icon">
+                <div class="navbar__menu-icon__middle"></div>
+            </div>
+            <div class="navbar__menu">
+                <a class="navbar__menu__item headline--link" href="#anchor_about-me">קצת עליי</a>
+                <a class="navbar__menu__item headline--link" href="#anchor_advantages">יתרונותיו של אתר</a>
+                <a class="navbar__menu__item headline--link" href="#anchor_why-me">למה אני?</a>
+                <a class="navbar__menu__item headline--link" href="#anchor_plans">תוכניות</a>
+                <a class="navbar__menu__item headline--link" href="#anchor_contact">צרו קשר</a>
+            </div>
             
         </navbar>
         
@@ -36,18 +45,18 @@
                 </div>
                 <div class="header__contact">
                     <h3 class="headline text--brighter-blue">לבניית אתר לעסק</h3>
-                    <button type="button" class="btn" href=""><a class="headline">צרו קשר</a></button>
+                    <a href="#anchor_contact"><button type="button " class="btn headline">צרו קשר</button></a>
                 </div>
             </div>
         </div>
     </header>
     
     
-    
+    <span id="anchor_about-me"></span>
     <div id="about-me" class="section section--pink">
         <hr class="seperator">
         <div class="wrapper wrapper--horizontal section__clearfix">
-            <h2 class="headline">קצת עלי</h2>
+            <h2 class="headline">קצת עליי</h2>
             <p class="headline headline--secondary">
                היי, קוראים לי אנה, 
                ואני מעצבת ובונה אתרי אינטרנט
@@ -70,7 +79,7 @@
         </div> <!-- wrapper -->
     </div> <!-- about-me -->
     
-    
+    <span id="anchor_advantages"></span>
     <div id="small-business-first" class="section section--dark text--white">
         <hr class="seperator">
         <div class="section__content wrapper--vertical wrapper--horizontal">
@@ -156,6 +165,7 @@
         </div><!-- happy-cat -->
     </div><!-- advantages -->
     
+    <span id="anchor_why-me"></span>
     <div id="small-business-second" class="section section--dark text--white">
         <hr class="seperator">
         <div class="section__content wrapper--vertical wrapper--horizontal">
@@ -270,7 +280,7 @@
           
     </div><!-- why-me -->
         
-        
+    <span id="anchor_plans"></span>    
     <div id="small-business-thired" class="section section--dark text--white">
         <hr class="seperator">
         <div class="section__content wrapper--vertical wrapper--horizontal">
@@ -346,6 +356,8 @@
         </div><!-- cat-with-butterfly --> 
     </div><!-- plans -->
         
+    
+    <span id="anchor_contact"></span>    
     <div id="contact" class="section section--dark text--white wrapper--bottom">
         <hr class="seperator">
         <div class="text--center wrapper--vertical wrapper--horizontal">
@@ -371,34 +383,34 @@
                 <hr>
                 
                 <div clas="row">
-                    <div class="row__col-sm-3">
+                    <div class="row__col-md-3">
                     <label for="name">שם מלא:</label>
                     </div>
-                    <div class="row__col-sm-9">
+                    <div class="row__col-md-9">
                     <input type="text" id="name" name="fullname" placeholder="שמך המלא" required>
                     </div>
                 </div>
                 <div clas="row">
-                    <div class="row__col-sm-3">
+                    <div class="row__col-md-3">
                     <label for="phone">פלאפון נייד:</label>
                     </div>
-                    <div class="row__col-sm-9">
+                    <div class="row__col-md-9">
                     <input type="tel" id="phone" name="phone" placeholder="מספר הטלפון הנייד שלכם" pattern="[0-9]{10}">
                     </div>
                 </div>
                 <div clas="row">
-                    <div class="row__col-sm-3">
+                    <div class="row__col-md-3">
                     <label for="email">דואר אלקטרוני:</label>
                     </div>
-                    <div class="row__col-sm-9">
+                    <div class="row__col-md-9">
                     <input type="email" id="email" name="email" placeholder="האימייל שלכם" required><br>
                     </div>
                 </div>
                 <div clas="row">
-                    <div class="row__col-sm-3">
+                    <div class="row__col-md-3">
                     <label for="subject">נושא הפנייה:</label>
                     </div>
-                    <div class="row__col-sm-9">
+                    <div class="row__col-md-9">
                     <textarea id="subject" name="subject" role="textbox" rows="5" placeholder="כתבו משהו..." required></textarea>
                     </div>
                 </div>

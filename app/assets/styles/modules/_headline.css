@@ -47,4 +47,26 @@
 
     }
     
+    &--link {
+        
+        font-size: 1.0rem;
+        padding: 5px 0;
+        font-weight: bold;
+        letter-spacing: 0.05rem;
+        text-shadow:
+		-0.5px -0.5px 0 $mainPink,
+		0.5px -0.5px 0 black,
+		-0.5px 0.5px 0 black,
+		0.5px 0.5px 0 black;
+        
+        @mixin atSmall {
+            border-right: 1px solid $white-Pink;
+            padding:0 5px 0 0;
+        }
+        
+        &:hover {
+            color: $mainPink-Dark;
+        }
+    }
+    
 }
