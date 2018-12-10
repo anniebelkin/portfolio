@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -17,11 +17,15 @@
   },
   "homepage": "https://github.com/anniebelkin/portfolio#readme",
   "dependencies": {
+    "jquery": "^3.3.1",
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
     "autoprefixer": "^9.3.1",
     "autoprefixer-core": "^6.0.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "babel-preset-es2015": "^6.24.1",
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
     "gulp-postcss": "^8.0.0",
@@ -30,6 +34,8 @@
     "postcss-import": "^12.0.1",
     "postcss-mixins": "^6.2.0",
     "postcss-nested": "^4.1.0",
-    "postcss-simple-vars": "^5.0.1"
+    "postcss-simple-vars": "^5.0.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   }
 }
