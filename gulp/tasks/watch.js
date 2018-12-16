@@ -23,6 +23,10 @@ gulp.task('watch', function(){
         gulp.start('cssInject');
     });
     
+    watch('./gulp/templates/**/*.css', function(){
+        gulp.start('sprite');
+    });
+    
     watch('./app/assets/scripts/**/*.js', function(){
         gulp.start('scriptsRefresh');
     });

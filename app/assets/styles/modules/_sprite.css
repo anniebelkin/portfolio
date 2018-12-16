@@ -1,0 +1,72 @@
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+.icon {
+    
+    background-image: url('../../assets/img/icons/sprite.svg'); 
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+    
+        &--chat{
+                background-position: 90.26548672566372% 32.05128205128205%;
+                width: 20px;
+                height: 19px;
+            }
+        &--chat:hover{
+                background-position: 99.11504424778761% 31.84713375796178%;
+                width: 20px;
+                height: 18px;
+            }
+        &--facebook{
+                background-position: 76.82403433476395% 48.38709677419355%;
+                width: 13px;
+                height: 20px;
+            }
+        &--facebook:hover{
+                background-position: 99.57081545064378% 48.38709677419355%;
+                width: 13px;
+                height: 20px;
+            }
+        &--full-logo{
+                background-position: 100% 0;
+                width: 67px;
+                height: 25px;
+            }
+        &--full-logo:hover{
+                background-position: 100% 16.666666666666668%;
+                width: 67px;
+                height: 25px;
+            }
+        &--github{
+                background-position: 88.05309734513274% 61.29032258064516%;
+                width: 20px;
+                height: 20px;
+            }
+        &--github:hover{
+                background-position: 84.95575221238938% 48.38709677419355%;
+                width: 20px;
+                height: 20px;
+            }
+        &--linkedin{
+                background-position: 93.80530973451327% 48.38709677419355%;
+                width: 20px;
+                height: 20px;
+            }
+        &--linkedin:hover{
+                background-position: 79.20353982300885% 61.29032258064516%;
+                width: 20px;
+                height: 20px;
+            }
+        &--logo{
+                background-position: 80.99547511312217% 33.333333333333336%;
+                width: 25px;
+                height: 25px;
+            }
+        &--sprite{
+                background-position: 0 0;
+                width: 179px;
+                height: 175px;
+            }
+        
+}
