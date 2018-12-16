@@ -364,6 +364,7 @@ template {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
+    
 }
 
 body{
@@ -375,7 +376,6 @@ body{
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
-    
     
     
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
@@ -408,9 +408,11 @@ a {
 }
 
 span {
-    display: block;
-    position:relative;
-    top:-30px;
+    display: inline-block;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 /* _headline.css */
@@ -1266,6 +1268,12 @@ span {
         display: table;
     }
 
+.section__anchor {
+        display: block;
+        position:relative;
+        top:-30px;
+    }
+
 /* _forms.css */
 
 form {
@@ -1297,3 +1305,87 @@ textarea {
     text-align: center;
     background-color: #F2F4F6;
 }
+
+/* Do not edit modules/_sprite directly as it is generated automatically by Gulp.
+Instead edit gulp/templates/sprite */
+
+.icon {
+    
+    background-image: url('../../assets/img/icons/sprite.svg'); 
+    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
+        
+}
+
+.icon--chat{
+                background-position: 90.26548672566372% 32.05128205128205%;
+                width: 20px;
+                height: 19px;
+            }
+
+.icon--chat:hover{
+                background-position: 99.11504424778761% 31.84713375796178%;
+                width: 20px;
+                height: 18px;
+            }
+
+.icon--facebook{
+                background-position: 76.82403433476395% 48.38709677419355%;
+                width: 13px;
+                height: 20px;
+            }
+
+.icon--facebook:hover{
+                background-position: 99.57081545064378% 48.38709677419355%;
+                width: 13px;
+                height: 20px;
+            }
+
+.icon--full-logo{
+                background-position: 100% 0;
+                width: 67px;
+                height: 25px;
+            }
+
+.icon--full-logo:hover{
+                background-position: 100% 16.666666666666668%;
+                width: 67px;
+                height: 25px;
+            }
+
+.icon--github{
+                background-position: 88.05309734513274% 61.29032258064516%;
+                width: 20px;
+                height: 20px;
+            }
+
+.icon--github:hover{
+                background-position: 84.95575221238938% 48.38709677419355%;
+                width: 20px;
+                height: 20px;
+            }
+
+.icon--linkedin{
+                background-position: 93.80530973451327% 48.38709677419355%;
+                width: 20px;
+                height: 20px;
+            }
+
+.icon--linkedin:hover{
+                background-position: 79.20353982300885% 61.29032258064516%;
+                width: 20px;
+                height: 20px;
+            }
+
+.icon--logo{
+                background-position: 80.99547511312217% 33.333333333333336%;
+                width: 25px;
+                height: 25px;
+            }
+
+.icon--sprite{
+                background-position: 0 0;
+                width: 179px;
+                height: 175px;
+            }

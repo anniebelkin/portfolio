@@ -50,5 +50,11 @@
     &__clearfix {
         @mixin clearfix;
     }
+    
+    &__anchor {
+        display: block;
+        position:relative;
+        top:-30px;
+    }
 
 }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="assets/img/logo.png">
+    <link rel="icon" href="assets/img/icons/logo.svg" >
 
     <title>Annie Moore</title>
     <link rel="stylesheet" href="temp/styles/styles.css">
@@ -15,21 +15,21 @@
 
 <body>
     
-    <header id="anchor_header" class="wrapper--top">
+    <header id="_header" class="wrapper--top">
         
         <navbar class="navbar navbar--top">
             
-            <a id="logo" class="btn__logo" href="#anchor_header"><img class="btn__logo" src="assets/img/full-logo.png" alt="logo"></a>
+            <a id="logo" href="#_header"><span class="icon icon--full-logo"></span></a>
             
-            <div class="navbar__menu-icon">
+            <div class="navbar__menu-icon navbar__menu-icon--mobile">
                 <div class="navbar__menu-icon__middle"></div>
             </div>
             <div class="navbar__menu">
-                <a class="navbar__menu__item headline--link" href="#anchor_about-me">קצת עליי</a>
-                <a class="navbar__menu__item headline--link" href="#anchor_advantages">יתרונותיו של אתר</a>
-                <a class="navbar__menu__item headline--link" href="#anchor_why-me">למה אני?</a>
-                <a class="navbar__menu__item headline--link" href="#anchor_plans">תוכניות</a>
-                <a class="navbar__menu__item headline--link" href="#anchor_contact">צרו קשר</a>
+                <a class="navbar__menu__item headline--link" href="#_about-me">קצת עליי</a>
+                <a class="navbar__menu__item headline--link" href="#_advantages">יתרונותיו של אתר</a>
+                <a class="navbar__menu__item headline--link" href="#_why-me">למה אני?</a>
+                <a class="navbar__menu__item headline--link" href="#_plans">תוכניות</a>
+                <a class="navbar__menu__item headline--link" href="#_contact">צרו קשר</a>
             </div>
             
         </navbar>
@@ -52,7 +52,7 @@
     </header>
     
     
-    <span id="anchor_about-me"></span>
+    <span id="_about-me" class="section__anchor"></span>
     <div id="about-me" class="section section--pink">
         <hr class="seperator">
         <div class="wrapper wrapper--horizontal section__clearfix">
@@ -79,7 +79,7 @@
         </div> <!-- wrapper -->
     </div> <!-- about-me -->
     
-    <span id="anchor_advantages"></span>
+    <span id="_advantages" class="section__anchor"></span>
     <div id="small-business-first" class="section section--dark text--white">
         <hr class="seperator">
         <div class="section__content wrapper--vertical wrapper--horizontal">
@@ -165,7 +165,7 @@
         </div><!-- happy-cat -->
     </div><!-- advantages -->
     
-    <span id="anchor_why-me"></span>
+    <span id="_why-me" class="section__anchor"></span>
     <div id="small-business-second" class="section section--dark text--white">
         <hr class="seperator">
         <div class="section__content wrapper--vertical wrapper--horizontal">
@@ -280,7 +280,7 @@
           
     </div><!-- why-me -->
         
-    <span id="anchor_plans"></span>    
+    <span id="_plans" class="section__anchor"></span>    
     <div id="small-business-thired" class="section section--dark text--white">
         <hr class="seperator">
         <div class="section__content wrapper--vertical wrapper--horizontal">
@@ -357,22 +357,30 @@
     </div><!-- plans -->
         
     
-    <span id="anchor_contact"></span>    
+    <span id="_contact" class="section__anchor"></span>    
     <div id="contact" class="section section--dark text--white wrapper--bottom">
         <hr class="seperator">
         <div class="text--center wrapper--vertical wrapper--horizontal">
             <form>
             <fieldset class="section__border">
                 <legend align="center" class="headline wrapper">צרו קשר</legend> 
-                <p>
+                <p class="text--small">
                     אנה בלקין <br>
                     באר שבע, דרום ישראל
                 </p>
-                <img src="assets/img/github.png" alt="github">
-                <img src="assets/img/linkedin.png" alt="linked in">
-                <img src="assets/img/chat.png" alt="facebook chat">
-                <img src="assets/img/facebook.png" alt="facebook">
-                <br><br>
+                <a target="_blank" href="https://github.com/anniebelkin">
+                    <span class="icon icon--github" alt="github"></span>
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/anniebelkin/">
+                    <span class="icon icon--linkedin" alt="linked in"></span>
+                </a>
+                <a target="_blank" href="https://m.me/AnnieBelkin97">
+                    <span class="icon icon--chat" alt="facebook chat"></span>
+                </a>
+                <a target="_blank" href="https://www.facebook.com/AnnieBelkin97">
+                    <span class="icon icon--facebook" alt="facebook"></span>
+                </a>
+                <br>
                 <hr>
                 <h4 class="headline headline--secondary"> קורות חיים </h4>
                 <button type="button" class="btn"><a href="/images/myw3schoolsimage.jpg" download>עברית</a></button>
@@ -395,7 +403,7 @@
                     <label for="phone">פלאפון נייד:</label>
                     </div>
                     <div class="row__col-md-9">
-                    <input type="tel" id="phone" name="phone" placeholder="מספר הטלפון הנייד שלכם" pattern="[0-9]{10}">
+                    <input type="tel" id="phone" name="phone" placeholder="מספר הטלפון הנייד שלכם">
                     </div>
                 </div>
                 <div clas="row">
@@ -436,6 +444,18 @@
     </div><!-- contact -->    
     
     <footer class="navbar navbar--bottom">
+        <a target="_blank" href="https://github.com/anniebelkin">
+            <span class="icon icon--github" alt="github"></span>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/anniebelkin/">
+            <span class="icon icon--linkedin" alt="linked in"></span>
+        </a>
+        <a target="_blank" href="https://m.me/AnnieBelkin97">
+            <span class="icon icon--chat" alt="facebook chat"></span>
+        </a>
+        <a target="_blank" href="https://www.facebook.com/AnnieBelkin97">
+            <span class="icon icon--facebook" alt="facebook"></span>
+        </a>
     </footer>
     
     <script src="temp/scripts/App.js"></script>
