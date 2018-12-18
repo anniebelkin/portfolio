@@ -1,11 +1,20 @@
 /* _global.css */
 * {
     box-sizing: border-box;
+}
 
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
 }
 
 body {
-
     background: url(../../assets/img/background.jpg) repeat top left;
     color: $mainBlue-Darker;
     width: 100%;
@@ -13,8 +22,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
-
-
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
     font-size: 0.9rem;
 
@@ -26,7 +33,6 @@ body {
         border: 1px solid rgba($brown-Pink, 0.8);
         box-shadow: 15px 10px 10px rgba($brown-Pink, 0.3);
     }
-
 }
 
 a {
@@ -36,8 +42,4 @@ a {
 
 span {
     display: inline-block;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }

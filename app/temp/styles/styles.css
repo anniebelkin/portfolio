@@ -360,45 +360,49 @@ template {
 
 /* _global.css */
 
-*{
+* {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
             box-sizing: border-box;
-    
 }
 
-body{
-    
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    /* make scrollbar transparent */
+}
+
+body {
     background: url(../../assets/img/background.jpg) repeat top left;
     color: #55A0E8;
-    width:100%;
+    width: 100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     max-width: 960px;
-    
-    
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
     font-size: 0.9rem;
-        
 }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
-body{
-            font-size: 1.2rem
-        
+body {
+        font-size: 1.2rem
 }
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
-body{
+body {
         border: 1px solid rgba(206,188,198, 0.8);
         -webkit-box-shadow: 15px 10px 10px rgba(206,188,198, 0.3);
            -moz-box-shadow: 15px 10px 10px rgba(206,188,198, 0.3);
                 box-shadow: 15px 10px 10px rgba(206,188,198, 0.3)
-        
 }
     }
 
@@ -411,37 +415,33 @@ span {
     display: inline-block;
 }
 
-::-webkit-scrollbar { 
-    display: none; 
-}
-
 /* _headline.css */
 
 .headline {
-    
+
     padding: 0;
     margin: 0;
     font-size: 1.0rem;
     font-weight: 600;
     text-shadow: 0.2px 0.2px 1px #989FA6;
-    
+
 }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .headline {
-            font-size: 1.8rem;
-            text-shadow: 0.5px 0.5px 1.5px #989FA6
-    
+        font-size: 1.8rem;
+        text-shadow: 0.5px 0.5px 1.5px #989FA6
+
 }
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .headline {
-            font-size: 2.4rem;
-            text-shadow: 1px 1px 2px #989FA6
-    
+        font-size: 2.4rem;
+        text-shadow: 1px 1px 2px #989FA6
+
 }
     }
 
@@ -451,21 +451,21 @@ span {
         padding: 2px;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .headline--primery {
             font-size: 2.0rem
     }
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .headline--primery {
             font-size: 2.6rem
     }
     }
 
-@media (min-width: 1000px ){
+@media (min-width: 1000px) {
 
 .headline--primery {
             font-size: 3.0rem
@@ -479,7 +479,7 @@ span {
 
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .headline--secondary {
             font-size: 1.4rem
@@ -488,23 +488,23 @@ span {
     }
 
 .headline--link {
-        
+
         font-size: 1.0rem;
         padding: 5px 0;
         font-weight: bold;
         letter-spacing: 0.05rem;
         text-shadow:
-		-0.5px -0.5px 0 #F5B8D9,
-		0.5px -0.5px 0 black,
-		-0.5px 0.5px 0 black,
-		0.5px 0.5px 0 black;
+            -0.5px -0.5px 0 #F5B8D9,
+            0.5px -0.5px 0 black,
+            -0.5px 0.5px 0 black,
+            0.5px 0.5px 0 black;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .headline--link {
             border-right: 1px solid #FAF5F8;
-            padding:0 5px 0 0
+            padding: 0 5px 0 0
     }
     }
 
@@ -546,7 +546,7 @@ span {
         text-align: center;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .text--center-atSmall{
             text-align: center
@@ -557,7 +557,7 @@ span {
         font-size: 0.8rem;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .text--small{
             font-size: 1.0rem
@@ -568,7 +568,7 @@ span {
 
 .btn {
     background-color: #CEBCC6;
-    border: 1px solid #F34CA7; 
+    border: 1px solid #F34CA7;
     color: #F34CA7;
     padding: 5px 10px;
     margin: 15px;
@@ -577,85 +577,86 @@ span {
             box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .btn {
-            padding: 5px 15px
+        padding: 5px 15px
 }
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .btn {
-            padding: 5px 20px
+        padding: 5px 20px
 }
     }
 
-@media (min-width: 1000px ){
+@media (min-width: 1000px) {
 
 .btn {
-            padding: 5px 25px
+        padding: 5px 25px
 }
     }
 
 .btn__logo {
-        max-height:30px;;
-        width:auto;
+        max-height: 30px;
+        ;
+        width: auto;
         padding: 0 2px;
     }
 
 .btn__secondary {
-        
+
         background-color: transparent;
-        border: 1px solid #F5B8D9; 
+        border: 1px solid #F5B8D9;
         color: #F5B8D9;
     }
 
 .btn__submit {
-        
+
         width: 35%;
-        border: 1px solid #F34CA7; 
-        
+        border: 1px solid #F34CA7;
+
     }
 
 .btn:hover {
         background-color: #F34CA7;
-        border: 1px solid #CEBCC6; 
+        border: 1px solid #CEBCC6;
         color: #CEBCC6;
-        cursor:pointer;
+        cursor: pointer;
     }
 
 /* _wrapper.css */
 
 .wrapper {
-    
+
     padding: 10px 20px;
 
 }
 
 .wrapper--vertical {
         padding-top: 10px;
-        padding-bottom: 10px;   
+        padding-bottom: 10px;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .wrapper--vertical {
             padding-top: 30px;
-            padding-bottom: 30px   
+            padding-bottom: 30px
     }
     }
 
 .wrapper--horizontal {
         padding-left: 20px;
-        padding-right: 20px;  
+        padding-right: 20px;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .wrapper--horizontal {
             padding-left: 40px;
-            padding-right: 40px  
+            padding-right: 40px
     }
     }
 
@@ -669,10 +670,10 @@ span {
 
 .wrapper__atSmall-left {
         padding-left: 30%;
-        
+
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .wrapper__atMedium-left {
             padding-left: 25%
@@ -683,7 +684,7 @@ span {
         padding-right: 25%;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .wrapper__onSmall-right {
             padding-right: inherit
@@ -706,11 +707,11 @@ span {
 
 .row__col-md-3 {
         margin-top: 5px;
-        float:right;
+        float: right;
         width: 100%;
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .row__col-md-3 {
             margin-top: 10px;
@@ -720,27 +721,27 @@ span {
 
 .row__col-sm-6 {
         margin-top: 5px;
-        float:right;
+        float: right;
         width: 100%;
-        
+
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .row__col-sm-6 {
             margin-top: 10px;
             width: 50%
-        
+
     }
     }
 
 .row__col-md-9 {
         margin-top: 5px;
-        float:right;
+        float: right;
         width: 100%;
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .row__col-md-9 {
             margin-top: 10px;
@@ -750,37 +751,37 @@ span {
 
 /* _images.css */
 
-.images__container{
+.images__container {
         min-height: 100px;
         position: absolute;
-        bottom:0;
+        bottom: 0;
     }
 
 .images__container--left {
-            left:0;
+            left: 0;
         }
 
 .images__container--right {
-            right:0;
+            right: 0;
         }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
-.images__container{
+.images__container {
             min-height: 150px
     }
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
-.images__container{
+.images__container {
             min-height: 180px
     }
     }
 
-@media (min-width: 1000px ){
+@media (min-width: 1000px) {
 
-.images__container{
+.images__container {
             min-height: 200px
     }
     }
@@ -788,20 +789,20 @@ span {
 .images__seperator {
         min-height: 130%;
         max-height: 130%;
-        position:absolute;
-        width:auto;
+        position: absolute;
+        width: auto;
         z-index: 2;
         top: -15%;
     }
 
 .images--left {
-        left: 20px; 
-        float:left;
+        left: 20px;
+        float: left;
     }
 
 .images--right {
         right: 10px;
-        float:right;
+        float: right;
     }
 
 .images--higher {
@@ -813,10 +814,10 @@ span {
     }
 
 .images--top {
-        top:0;
+        top: 0;
     }
 
-.images--smaller{
+.images--smaller {
         max-width: 25%;
         height: auto;
     }
@@ -829,16 +830,16 @@ span {
         margin-right: auto;
     }
 
-.images__inside-content{
+.images__inside-content {
         max-width: 100%;
         height: auto;
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
-.images__inside-content{
-            float:left;
-            max-width:30%;
+.images__inside-content {
+            float: left;
+            max-width: 30%;
             padding-right: 20px;
             padding-bottom: 0
     }
@@ -846,10 +847,10 @@ span {
 
 .images__small-placeholder-right {
         margin-right: 30%;
-        
+
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .images__medium-placeholder-right {
             margin-right: 30%
@@ -858,10 +859,10 @@ span {
 
 .images__small-placeholder-left {
         margin-left: 30%;
-        
+
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .images__medium-placeholder-left {
             margin-left: 30%
@@ -871,9 +872,9 @@ span {
 /* _seperator.css */
 
 .seperator {
-    
+
     background-color: #CEBCC6;
-    border:none;
+    border: none;
     height: 2px;
     margin: 0;
     -webkit-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
@@ -882,19 +883,19 @@ span {
 
 }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .seperator {
-            height: 4px
+        height: 4px
 
 }
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .seperator {
-            height: 6px;
-            margin: 0
+        height: 6px;
+        margin: 0
 
 }
     }
@@ -913,8 +914,8 @@ span {
     -moz-transition: all .5s ease-out;
     transition: all .5s ease-out;
     background-color: rgba(206,188,198, 0.95);
-    
-    
+
+
 }
 
 .navbar::after {
@@ -924,7 +925,7 @@ span {
     }
 
 .navbar--top {
-        top:0;
+        top: 0;
         border-bottom: 1px solid #CEBCC6;
     }
 
@@ -934,7 +935,7 @@ span {
     }
 
 .navbar--is-extended {
-        max-height:200px;
+        max-height: 200px;
     }
 
 .navbar__menu {
@@ -949,15 +950,15 @@ span {
         transition: opacity 1s ease-in-out;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .navbar__menu {
             display: inline;
             visibility: visible;
             opacity: 1;
             padding: 0 0 0 10px;
-            margin-top:3px;
-            float:left
+            margin-top: 3px;
+            float: left
     }
     }
 
@@ -965,7 +966,7 @@ span {
             display: block;
         }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .navbar__menu__item {
                 display: inline
@@ -981,17 +982,17 @@ span {
         position: relative;
         margin-top: 5px;
         margin-left: 5px;
-        display:block;
-        float:left;
+        display: block;
+        float: left;
         height: 19px;
-        width: 20px; 
+        width: 20px;
 
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .navbar__menu-icon {
-            display: none 
+            display: none
 
     }
     }
@@ -1057,11 +1058,11 @@ span {
         }
 
 .navbar__menu-icon--close-x::before {
-                -webkit-transform: rotate(45deg) scaleX(1.23) ;
-                   -moz-transform: rotate(45deg) scaleX(1.23) ;
-                    -ms-transform: rotate(45deg) scaleX(1.23) ;
-                     -o-transform: rotate(45deg) scaleX(1.23) ;
-                        transform: rotate(45deg) scaleX(1.23) ;
+                -webkit-transform: rotate(45deg) scaleX(1.23);
+                   -moz-transform: rotate(45deg) scaleX(1.23);
+                    -ms-transform: rotate(45deg) scaleX(1.23);
+                     -o-transform: rotate(45deg) scaleX(1.23);
+                        transform: rotate(45deg) scaleX(1.23);
             }
 
 .navbar__menu-icon--close-x .navbar__menu-icon__middle {
@@ -1085,18 +1086,18 @@ span {
 
 .header {
     width: 100%;
-    height:auto;
+    height: auto;
     position: relative;
     text-align: center;
-    padding: 10px 20px; 
-    
+    padding: 10px 20px;
+
 }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .header {
-            padding-bottom: 0 
-    
+        padding-bottom: 0
+
 }
     }
 
@@ -1112,7 +1113,7 @@ span {
         height: 100%;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .header__content {
             top: 20px
@@ -1127,10 +1128,10 @@ span {
         top: 20px;
     }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 .header__image {
-            top:0
+            top: 0
     }
     }
 
@@ -1141,21 +1142,21 @@ span {
 .header__contact {
         position: relative;
         text-align: right;
-        top : 10%;
-        right:10px;
+        top: 10%;
+        right: 10px;
     }
 
-@media (min-width:  800px ){
+@media (min-width: 800px) {
 
 .header__contact {
-            text-align : center
+            text-align: center
     }
     }
 
 /* _section.css */
 
 .section {
-    min-height:80px;
+    min-height: 80px;
     width: 100%;
     text-align: right;
     position: relative;
@@ -1171,7 +1172,7 @@ span {
     }
 
 .section--dark {
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
 
 .section--orange {
@@ -1183,20 +1184,20 @@ span {
     }
 
 .section__content {
-        min-height:inherit;
+        min-height: inherit;
         display: table;
         min-width: 100%;
     }
 
-.section__content--center{
+.section__content--center {
             display: table-cell;
             vertical-align: middle;
         }
 
 .section__border {
-        -webkit-border-radius:10%;
-           -moz-border-radius:10%;
-                border-radius:10%;
+        -webkit-border-radius: 10%;
+           -moz-border-radius: 10%;
+                border-radius: 10%;
         border: 2px solid #F075B9;
     }
 
@@ -1212,25 +1213,25 @@ span {
 
 .section__anchor {
         display: block;
-        position:relative;
-        top:-30px;
+        position: relative;
+        top: -30px;
     }
 
 /* _forms.css */
 
 form {
-    width:100%;
-    max-width:100%;
+    width: 100%;
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     padding: 0 10px;
 }
 
-@media (min-width: 600px ){
+@media (min-width: 600px) {
 
 form {
-        width:80%;
-        max-width:80%
+        width: 80%;
+        max-width: 80%
 }
     }
 
@@ -1240,9 +1241,9 @@ input {
     background-color: #F2F4F6;
 }
 
-textarea { 
+textarea {
     /* will prevent resizing horizontally */
-    resize:vertical;
+    resize: vertical;
     width: 100%;
     text-align: center;
     background-color: #F2F4F6;
@@ -1252,82 +1253,82 @@ textarea {
 Instead edit gulp/templates/sprite */
 
 .icon {
-    
-    background-image: url('../../assets/img/icons/sprite.svg'); 
+
+    background-image: url('../../assets/img/icons/sprite.svg');
     background-repeat: no-repeat;
     width: auto;
     height: auto;
-        
+
 }
 
-.icon--chat{
-                background-position: 90.26548672566372% 32.05128205128205%;
-                width: 20px;
-                height: 19px;
-            }
+.icon--chat {
+        background-position: 90.26548672566372% 32.05128205128205%;
+        width: 20px;
+        height: 19px;
+    }
 
-.icon--chat:hover{
-                background-position: 99.11504424778761% 31.84713375796178%;
-                width: 20px;
-                height: 18px;
-            }
+.icon--chat:hover {
+        background-position: 99.11504424778761% 31.84713375796178%;
+        width: 20px;
+        height: 18px;
+    }
 
-.icon--facebook{
-                background-position: 76.82403433476395% 48.38709677419355%;
-                width: 13px;
-                height: 20px;
-            }
+.icon--facebook {
+        background-position: 76.82403433476395% 48.38709677419355%;
+        width: 13px;
+        height: 20px;
+    }
 
-.icon--facebook:hover{
-                background-position: 99.57081545064378% 48.38709677419355%;
-                width: 13px;
-                height: 20px;
-            }
+.icon--facebook:hover {
+        background-position: 99.57081545064378% 48.38709677419355%;
+        width: 13px;
+        height: 20px;
+    }
 
-.icon--full-logo{
-                background-position: 100% 0;
-                width: 67px;
-                height: 25px;
-            }
+.icon--full-logo {
+        background-position: 100% 0;
+        width: 67px;
+        height: 25px;
+    }
 
-.icon--full-logo:hover{
-                background-position: 100% 16.666666666666668%;
-                width: 67px;
-                height: 25px;
-            }
+.icon--full-logo:hover {
+        background-position: 100% 16.666666666666668%;
+        width: 67px;
+        height: 25px;
+    }
 
-.icon--github{
-                background-position: 88.05309734513274% 61.29032258064516%;
-                width: 20px;
-                height: 20px;
-            }
+.icon--github {
+        background-position: 88.05309734513274% 61.29032258064516%;
+        width: 20px;
+        height: 20px;
+    }
 
-.icon--github:hover{
-                background-position: 84.95575221238938% 48.38709677419355%;
-                width: 20px;
-                height: 20px;
-            }
+.icon--github:hover {
+        background-position: 84.95575221238938% 48.38709677419355%;
+        width: 20px;
+        height: 20px;
+    }
 
-.icon--linkedin{
-                background-position: 93.80530973451327% 48.38709677419355%;
-                width: 20px;
-                height: 20px;
-            }
+.icon--linkedin {
+        background-position: 93.80530973451327% 48.38709677419355%;
+        width: 20px;
+        height: 20px;
+    }
 
-.icon--linkedin:hover{
-                background-position: 79.20353982300885% 61.29032258064516%;
-                width: 20px;
-                height: 20px;
-            }
+.icon--linkedin:hover {
+        background-position: 79.20353982300885% 61.29032258064516%;
+        width: 20px;
+        height: 20px;
+    }
 
-.icon--logo{
-                background-position: 80.99547511312217% 33.333333333333336%;
-                width: 25px;
-                height: 25px;
-            }
+.icon--logo {
+        background-position: 80.99547511312217% 33.333333333333336%;
+        width: 25px;
+        height: 25px;
+    }
 
-.icon--sprite{
-                background-position: 0 0;
-                width: 179px;
-                height: 175px;
-            }
+.icon--sprite {
+        background-position: 0 0;
+        width: 179px;
+        height: 175px;
+    }
