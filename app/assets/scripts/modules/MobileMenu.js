@@ -17,13 +17,13 @@ class MobileMenu {
     }
     
     toggleTheMenu(){
-        this.topNavbar.toggleClass("navbar__is-extended");
+        this.topNavbar.toggleClass("navbar--is-extended");
         this.menuContent.toggleClass("navbar__menu--is-visible");
         this.menuIcon.toggleClass("navbar__menu-icon--close-x");
     }
     
     hideTheMenu(){
-        this.topNavbar.removeClass("navbar__is-extended");
+        this.topNavbar.removeClass("navbar--is-extended");
         this.menuContent.removeClass("navbar__menu--is-visible");
     }
 }
