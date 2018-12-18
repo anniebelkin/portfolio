@@ -42,6 +42,7 @@
     
     &--small{
         font-size: 0.8rem;
+
         @mixin atSmall {
             font-size: 1.0rem;
         }

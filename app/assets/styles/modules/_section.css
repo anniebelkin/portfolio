@@ -1,60 +1,60 @@
 /* _section.css */
 
 .section {
-    min-height:80px;
+    min-height: 80px;
     width: 100%;
     text-align: right;
     position: relative;
-    
+
     &--pink {
         background-color: $white-Pink;
     }
-    
+
     &--blue {
         background-color: rgba($mainBlue, 0.3);
     }
-    
+
     &--dark {
-        background-color: rgba(0,0,0,0.7);
+        background-color: rgba(0, 0, 0, 0.7);
     }
-    
+
     &--orange {
         background-color: rgba($pale-Orange, 0.3);
     }
-    
+
     &--pink-dark {
         background-color: rgba($brown-Pink, 0.5);
     }
-    
-    
+
+
     &__content {
-        min-height:inherit;
+        min-height: inherit;
         display: table;
         min-width: 100%;
-        
-        &--center{
+
+        &--center {
             display: table-cell;
             vertical-align: middle;
         }
     }
-    
+
     &__border {
-        border-radius:10%;
+        border-radius: 10%;
         border: 2px solid $mainPink-Dark;
     }
-    
+
     &__box {
         display: inline-block;
     }
-    
+
     &__clearfix {
         @mixin clearfix;
     }
-    
+
     &__anchor {
         display: block;
-        position:relative;
-        top:-30px;
+        position: relative;
+        top: -30px;
     }
 
 }

@@ -1,7 +1,7 @@
 import $ from 'jquery';
 
 class MobileMenu {
-    constructor(){
+    constructor() {
         this.topNavbar = $(".navbar--top");
         this.menuIcon = $(".navbar__menu-icon");
         this.menuContent = $(".navbar__menu");
@@ -9,20 +9,20 @@ class MobileMenu {
         this.logo = $("#logo");
         this.events();
     }
-    
-    events(){
+
+    events() {
         this.menuIcon.click(this.toggleTheMenu.bind(this));
         this.menuLinks.click(this.hideTheMenu.bind(this));
         this.logo.click(this.hideTheMenu.bind(this));
     }
-    
-    toggleTheMenu(){
+
+    toggleTheMenu() {
         this.topNavbar.toggleClass("navbar--is-extended");
         this.menuContent.toggleClass("navbar__menu--is-visible");
         this.menuIcon.toggleClass("navbar__menu-icon--close-x");
     }
-    
-    hideTheMenu(){
+
+    hideTheMenu() {
         this.topNavbar.removeClass("navbar--is-extended");
         this.menuContent.removeClass("navbar__menu--is-visible");
     }

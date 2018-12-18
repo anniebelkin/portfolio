@@ -8,10 +8,12 @@ var gulp = require('gulp'),
     hexrgba = require('postcss-hexrgba'),
     mixins = require('postcss-mixins');
 
-gulp.task('styles', function(){
+gulp.task('styles', function () {
     return gulp.src('./app/assets/styles/styles.css')
-        .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba ,autoprefixer({ browsers: ['> 0%'] }) ]) )
-        .on('error', function(errorInfo){
+        .pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer({
+            browsers: ['> 0%']
+        })]))
+        .on('error', function (errorInfo) {
             console.log(errorInfo.toString());
             this.emit('end');
         })

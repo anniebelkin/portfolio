@@ -1,4 +1,4 @@
-var gulp =require('gulp'),
+var gulp = require('gulp'),
     svgSprite = require('gulp-svg-sprite');
 
 var config = {
@@ -24,8 +24,8 @@ var config = {
     }
 }
 
-gulp.task('sprite', function(){
-   return gulp.src('./app/assets/img/icons/**/*.svg')
-    .pipe(svgSprite(config))
-    .pipe(gulp.dest('./app/assets/'));
+gulp.task('sprite', function () {
+    return gulp.src('./app/assets/img/icons/**/*.svg')
+        .pipe(svgSprite(config))
+        .pipe(gulp.dest('./app/assets/'));
 });

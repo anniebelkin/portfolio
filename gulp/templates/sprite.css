@@ -9,11 +9,11 @@ Instead edit gulp/templates/sprite */
     height: auto;
     
     {{#shapes}}
-        &--{{selector.shape.0.raw}}{
-                background-position: {{position.relative.xy}};
-                width: {{width.outer}}px;
-                height: {{height.outer}}px;
-            }
+    &--{{selector.shape.0.raw}}{
+            background-position: {{position.relative.xy}};
+            width: {{width.outer}}px;
+            height: {{height.outer}}px;
+        }
     {{/shapes}}
         
 }

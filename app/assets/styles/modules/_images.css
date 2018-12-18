@@ -1,70 +1,70 @@
 /* _images.css */
 .images {
-    
-    &__container{
+
+    &__container {
         min-height: 100px;
         position: absolute;
-        bottom:0;
+        bottom: 0;
 
         &--left {
-            left:0;
+            left: 0;
         }
 
         &--right {
-            right:0;
+            right: 0;
         }
 
-        @mixin atSmall{
+        @mixin atSmall {
             min-height: 150px;
         }
 
-        @mixin atMedium{
+        @mixin atMedium {
             min-height: 180px
         }
 
-        @mixin atLarge{
+        @mixin atLarge {
             min-height: 200px;
         }
     }
-    
+
     &__seperator {
         min-height: 130%;
         max-height: 130%;
-        position:absolute;
-        width:auto;
+        position: absolute;
+        width: auto;
         z-index: 2;
         top: -15%;
     }
-    
-    
-    
+
+
+
     &--left {
-        left: 20px; 
-        float:left;
+        left: 20px;
+        float: left;
     }
-        
+
     &--right {
         right: 10px;
-        float:right;
+        float: right;
     }
-        
+
     &--higher {
         top: -20%;
     }
-    
+
     &--lower {
         top: -5%;
     }
-    
+
     &--top {
-        top:0;
+        top: 0;
     }
-    
-    &--smaller{
+
+    &--smaller {
         max-width: 25%;
         height: auto;
     }
-    
+
     &__icons {
         max-width: 50%;
         height: auto;
@@ -72,41 +72,41 @@
         margin-left: auto;
         margin-right: auto;
     }
-    
-    &__inside-content{
+
+    &__inside-content {
         max-width: 100%;
         height: auto;
-        
-        @mixin atMedium{
-            float:left;
-            max-width:30%;
+
+        @mixin atMedium {
+            float: left;
+            max-width: 30%;
             padding-right: 20px;
             padding-bottom: 0;
         }
     }
-    
+
     &__small-placeholder-right {
         margin-right: 30%;
-        
+
     }
-    
+
     &__medium-placeholder-right {
         @mixin atMedium {
             margin-right: 30%;
         }
     }
-    
+
     &__small-placeholder-left {
         margin-left: 30%;
-        
+
     }
-    
+
     &__medium-placeholder-left {
         @mixin atMedium {
             margin-left: 30%;
         }
     }
 
-    
+
 
 }

@@ -1,48 +1,51 @@
 /* _wrapper.css */
 
 .wrapper {
-    
+
     padding: 10px 20px;
-    
+
     &--vertical {
         padding-top: 10px;
         padding-bottom: 10px;
-        @mixin atSmall{
+
+        @mixin atSmall {
             padding-top: 30px;
             padding-bottom: 30px;
-        }   
+        }
     }
-    
+
     &--horizontal {
         padding-left: 20px;
         padding-right: 20px;
-        @mixin atSmall{
+
+        @mixin atSmall {
             padding-left: 40px;
             padding-right: 40px;
-        }  
+        }
     }
-    
+
     &--bottom {
         padding-bottom: 30px;
     }
-    
+
     &--top {
         padding-top: 30px;
     }
-    
+
     &__atSmall-left {
         padding-left: 30%;
-        
+
     }
-    
+
     &__atMedium-left {
         @mixin atMedium {
             padding-left: 25%;
         }
     }
-    
+
     &__onSmall-right {
         padding-right: 25%;
+
         @mixin atSmall {
             padding-right: inherit;
         }
