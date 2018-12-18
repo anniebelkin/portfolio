@@ -1,11 +1,56 @@
 /* _section.css */
 
 .section {
-    min-height: 80px;
     width: 100%;
-    text-align: right;
+    height: auto;
     position: relative;
+    @mixin clearfix;
 
+    /* a smaller section */
+    &--smaller {
+        max-width: 80%;
+    }
+
+    /* offset section for top navbar */
+    &__anchor {
+        padding-top: 30px;
+        margin-top: -30px;
+    }
+    
+    /* seperator between sections */
+    &__seperator {
+        border-top: 2px solid $brown-Pink;
+        box-shadow: 0 2px 2px 0 rgba($brown-Pink, 0.5) inset;
+
+        @mixin atSmall {
+            border-top-width: 4px;
+        }
+
+        @mixin atMedium {
+            border-top-width: 6px;
+        }
+    }
+    
+    /* place content vertically centered */
+    &__content {
+        min-height: inherit;
+        display: table;
+        min-width: 100%;
+
+        /* centered element */
+        &--center {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    }
+
+    /* overlay something over the section */
+    &__overlay {
+        position: absolute;
+        min-height: 100px;
+    }
+
+    /* section background colors: */
     &--pink {
         background-color: $white-Pink;
     }
@@ -25,36 +70,4 @@
     &--pink-dark {
         background-color: rgba($brown-Pink, 0.5);
     }
-
-
-    &__content {
-        min-height: inherit;
-        display: table;
-        min-width: 100%;
-
-        &--center {
-            display: table-cell;
-            vertical-align: middle;
-        }
-    }
-
-    &__border {
-        border-radius: 10%;
-        border: 2px solid $mainPink-Dark;
-    }
-
-    &__box {
-        display: inline-block;
-    }
-
-    &__clearfix {
-        @mixin clearfix;
-    }
-
-    &__anchor {
-        display: block;
-        position: relative;
-        top: -30px;
-    }
-
 }

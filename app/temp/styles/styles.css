@@ -360,6 +360,8 @@ template {
 
 /* _global.css */
 
+/* include padding and border in an element's total width and height */
+
 * {
     -webkit-box-sizing: border-box;
        -moz-box-sizing: border-box;
@@ -368,23 +370,26 @@ template {
 
 html {
     overflow: scroll;
+    /* hide horizontal scrollbar*/
     overflow-x: hidden;
 }
+
+/* make scrollbar transparent on -webkit- supporting browsers*/
 
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    /* make scrollbar transparent */
 }
 
 body {
     background: url(../../assets/img/background.jpg) repeat top left;
-    color: #55A0E8;
+    /* full width on screens smaller then 960 px */
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 960px;
+    /* place in the center of the screen and spacing for top and bottom navbars */
+    margin: 30px auto;
+    /* font styling */
+    color: #55A0E8;
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
     font-size: 0.9rem;
 }
@@ -396,6 +401,8 @@ body {
 }
     }
 
+/* box shadow on Medium screens */
+
 @media (min-width: 800px) {
 
 body {
@@ -406,13 +413,11 @@ body {
 }
     }
 
+/* remove default link styling */
+
 a {
     text-decoration: none;
     color: inherit;
-}
-
-span {
-    display: inline-block;
 }
 
 /* _headline.css */
@@ -548,18 +553,18 @@ span {
 
 @media (min-width: 600px) {
 
-.text--center-atSmall{
+.text--center-atSmall {
             text-align: center
     }
     }
 
-.text--small{
+.text--small {
         font-size: 0.8rem;
     }
 
 @media (min-width: 600px) {
 
-.text--small{
+.text--small {
             font-size: 1.0rem
     }
     }
@@ -629,43 +634,19 @@ span {
 /* _wrapper.css */
 
 .wrapper {
-
-    padding: 10px 20px;
+    /* basic content padding */
+    padding: 15px;
 
 }
 
-.wrapper--vertical {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+/* more padding on larger screens */
 
 @media (min-width: 600px) {
 
-.wrapper--vertical {
-            padding-top: 30px;
-            padding-bottom: 30px
-    }
-    }
+.wrapper {
+        padding: 20px 30px
 
-.wrapper--horizontal {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-@media (min-width: 600px) {
-
-.wrapper--horizontal {
-            padding-left: 40px;
-            padding-right: 40px
-    }
-    }
-
-.wrapper--bottom {
-        padding-bottom: 30px;
-    }
-
-.wrapper--top {
-        padding-top: 30px;
+}
     }
 
 .wrapper__atSmall-left {
@@ -845,59 +826,19 @@ span {
     }
     }
 
-.images__small-placeholder-right {
-        margin-right: 30%;
-
+.images__headline {
+        float: left;
+        position: relative;
+        max-width: 400px;
+        height: auto;
+        top: 20px;
     }
-
-@media (min-width: 800px) {
-
-.images__medium-placeholder-right {
-            margin-right: 30%
-    }
-    }
-
-.images__small-placeholder-left {
-        margin-left: 30%;
-
-    }
-
-@media (min-width: 800px) {
-
-.images__medium-placeholder-left {
-            margin-left: 30%
-    }
-    }
-
-/* _seperator.css */
-
-.seperator {
-
-    background-color: #CEBCC6;
-    border: none;
-    height: 2px;
-    margin: 0;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
-       -moz-box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
-            box-shadow: 0 2px 4px 0 rgba(206,188,198, 0.5);
-
-}
 
 @media (min-width: 600px) {
 
-.seperator {
-        height: 4px
-
-}
+.images__headline {
+            top: 0
     }
-
-@media (min-width: 800px) {
-
-.seperator {
-        height: 6px;
-        margin: 0
-
-}
     }
 
 /* _navbar.css */
@@ -1082,86 +1023,29 @@ span {
                         transform: rotate(-45deg) scaleX(1.23) translateX(-0.5px);
             }
 
-/* _header.css */
+/* _section.css */
 
-.header {
+.section {
     width: 100%;
     height: auto;
     position: relative;
-    text-align: center;
-    padding: 10px 20px;
+
 
 }
 
-@media (min-width: 600px) {
-
-.header {
-        padding-bottom: 0
-
-}
-    }
-
-.header::after {
+.section::after {
         content: "";
         clear: both;
         display: table;
     }
 
-.header__content {
-        position: absolute;
-        right: 10px;
-        height: 100%;
+/* a smaller section */
+
+.section--smaller {
+        max-width: 80%;
     }
 
-@media (min-width: 600px) {
-
-.header__content {
-            top: 20px
-    }
-    }
-
-.header__image {
-        float: left;
-        position: relative;
-        max-width: 400px;
-        height: auto;
-        top: 20px;
-    }
-
-@media (min-width: 600px) {
-
-.header__image {
-            top: 0
-    }
-    }
-
-.header__title {
-        text-align: right;
-    }
-
-.header__contact {
-        position: relative;
-        text-align: right;
-        top: 10%;
-        right: 10px;
-    }
-
-@media (min-width: 800px) {
-
-.header__contact {
-            text-align: center
-    }
-    }
-
-/* _section.css */
-
-.section {
-    min-height: 80px;
-    width: 100%;
-    text-align: right;
-    position: relative;
-
-}
+/* section background colors */
 
 .section--pink {
         background-color: #FAF5F8;
@@ -1183,70 +1067,91 @@ span {
         background-color: rgba(206,188,198, 0.5);
     }
 
+/* offset section for top navbar */
+
+.section__anchor {
+        padding-top: 30px;
+        margin-top: -30px;
+    }
+
+/* overlay something over the section */
+
+.section__overlay {
+        position: absolute;
+        min-height: 100px;
+    }
+
+/* place content vertically centered */
+
 .section__content {
         min-height: inherit;
         display: table;
         min-width: 100%;
     }
 
+/* centered element */
+
 .section__content--center {
             display: table-cell;
             vertical-align: middle;
         }
 
-.section__border {
-        -webkit-border-radius: 10%;
-           -moz-border-radius: 10%;
-                border-radius: 10%;
-        border: 2px solid #F075B9;
+/* seperator between sections */
+
+.section__seperator {
+        border-top: 2px solid #CEBCC6;
+        -webkit-box-shadow: 0 2px 2px 0 rgba(206,188,198, 0.5) inset;
+           -moz-box-shadow: 0 2px 2px 0 rgba(206,188,198, 0.5) inset;
+                box-shadow: 0 2px 2px 0 rgba(206,188,198, 0.5) inset;
     }
 
-.section__box {
-        display: inline-block;
+@media (min-width: 600px) {
+
+.section__seperator {
+            border-top-width: 4px
+    }
     }
 
-.section__clearfix::after {
-        content: "";
-        clear: both;
-        display: table;
-    }
+@media (min-width: 800px) {
 
-.section__anchor {
-        display: block;
-        position: relative;
-        top: -30px;
+.section__seperator {
+            border-top-width: 6px
+    }
     }
 
 /* _forms.css */
 
 form {
-    width: 100%;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 10px;
+    /* form width = content */
+    display: inline-block;
 }
 
-@media (min-width: 600px) {
-
-form {
-        width: 80%;
-        max-width: 80%
+fieldset {
+    /* spacing */
+    margin: 10px auto;
+    /* border */
+    border: 2px solid #F075B9;
+    -webkit-border-radius: 10%;
+       -moz-border-radius: 10%;
+            border-radius: 10%;
 }
-    }
 
-input {
-    width: 100%;
-    text-align: center;
+legend {
+    padding: 0 15px !important;
+}
+
+input,
+textarea {
+    /* background */
     background-color: #F2F4F6;
+    /* text */
+    text-align: center;
+    font-size: 1.0rem;
 }
 
 textarea {
     /* will prevent resizing horizontally */
     resize: vertical;
-    width: 100%;
-    text-align: center;
-    background-color: #F2F4F6;
 }
 
 /* Do not edit modules/_sprite directly as it is generated automatically by Gulp.

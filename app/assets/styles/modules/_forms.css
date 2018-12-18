@@ -1,28 +1,32 @@
 /* _forms.css */
 
 form {
-    width: 100%;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 10px;
-
-    @mixin atSmall {
-        width: 80%;
-        max-width: 80%;
-    }
+    /* form width = content */
+    display: inline-block;
 }
 
-input {
-    width: 100%;
-    text-align: center;
+fieldset {
+    /* spacing */
+    margin: 10px auto;
+    /* border */
+    border: 2px solid $mainPink-Dark;
+    border-radius: 10%;
+}
+
+legend {
+    padding: 0 15px !important;
+}
+
+input,
+textarea {
+    /* background */
     background-color: $white-Blue;
+    /* text */
+    text-align: center;
+    font-size: 1.0rem;
 }
 
 textarea {
     /* will prevent resizing horizontally */
     resize: vertical;
-    width: 100%;
-    text-align: center;
-    background-color: $white-Blue;
 }

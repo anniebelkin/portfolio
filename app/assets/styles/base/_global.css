@@ -1,27 +1,31 @@
 /* _global.css */
+
+/* include padding and border in an element's total width and height */
 * {
     box-sizing: border-box;
 }
 
 html {
     overflow: scroll;
+    /* hide horizontal scrollbar*/
     overflow-x: hidden;
 }
 
+/* make scrollbar transparent on -webkit- supporting browsers*/
 ::-webkit-scrollbar {
     width: 0px;
     background: transparent;
-    /* make scrollbar transparent */
 }
 
 body {
     background: url(../../assets/img/background.jpg) repeat top left;
-    color: $mainBlue-Darker;
+    /* full width on screens smaller then 960 px */
     width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 960px;
+    /* place in the center of the screen and spacing for top and bottom navbars */
+    margin: 30px auto;
+    /* font styling */
+    color: $mainBlue-Darker;
     font-family: 'New Peninim MT', 'Arial Hebrew', verdana, sans-serif;
     font-size: 0.9rem;
 
@@ -29,17 +33,16 @@ body {
         font-size: 1.2rem;
     }
 
+    /* box shadow on Medium screens */
     @mixin atMedium {
         border: 1px solid rgba($brown-Pink, 0.8);
         box-shadow: 15px 10px 10px rgba($brown-Pink, 0.3);
     }
 }
 
+/* remove default link styling */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-span {
-    display: inline-block;
-}

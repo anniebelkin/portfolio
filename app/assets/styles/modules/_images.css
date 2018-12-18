@@ -85,28 +85,16 @@
         }
     }
 
-    &__small-placeholder-right {
-        margin-right: 30%;
+    &__headline {
+        float: left;
+        position: relative;
+        max-width: 400px;
+        height: auto;
+        top: 20px;
 
-    }
-
-    &__medium-placeholder-right {
-        @mixin atMedium {
-            margin-right: 30%;
+        @mixin atSmall {
+            top: 0;
         }
     }
-
-    &__small-placeholder-left {
-        margin-left: 30%;
-
-    }
-
-    &__medium-placeholder-left {
-        @mixin atMedium {
-            margin-left: 30%;
-        }
-    }
-
-
 
 }

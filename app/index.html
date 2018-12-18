@@ -6,105 +6,118 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Web Design and web development">
+    <meta name="author" content="Annie Moore">
     <link rel="icon" href="assets/img/icons/logo.svg">
-
     <title>Annie Moore</title>
+
+    <!-- my CSS files -->
     <link rel="stylesheet" href="temp/styles/styles.css">
 </head>
 
 <body>
 
-    <header id="_header" class="wrapper--top">
+    <!-- website heaser -->
+    <header id="header">
 
+        <!-- top navigation bar -->
         <navbar class="navbar navbar--top">
-
-            <a id="logo" href="#_header"><span class="icon icon--full-logo"></span></a>
-
-            <div class="navbar__menu-icon navbar__menu-icon--mobile">
+            <!-- website logo -->
+            <a id="logo" href="#header"><svg class="icon icon--full-logo"></svg></a>
+            <!-- menu icon on small screens -->
+            <div id="menu-icon" class="navbar__menu-icon navbar__menu-icon--mobile">
                 <div class="navbar__menu-icon__middle"></div>
-            </div>
-            <div class="navbar__menu">
-                <a class="navbar__menu__item headline--link" href="#_about-me">קצת עליי</a>
-                <a class="navbar__menu__item headline--link" href="#_advantages">יתרונותיו של אתר</a>
-                <a class="navbar__menu__item headline--link" href="#_why-me">למה אני?</a>
-                <a class="navbar__menu__item headline--link" href="#_plans">תוכניות</a>
-                <a class="navbar__menu__item headline--link" href="#_contact">צרו קשר</a>
-            </div>
-
+            </div><!-- menu-icon -->
+            <!-- main menu -->
+            <div id="main-menu" class="navbar__menu">
+                <a class="navbar__menu__item headline--link" href="#about-me">קצת עליי</a>
+                <a class="navbar__menu__item headline--link" href="#advantages">יתרונותיו של אתר</a>
+                <a class="navbar__menu__item headline--link" href="#why-me">למה אני?</a>
+                <a class="navbar__menu__item headline--link" href="#plans">תוכניות</a>
+                <a class="navbar__menu__item headline--link" href="#contact">צרו קשר</a>
+            </div><!-- main-menu -->
         </navbar>
 
-        <div class="header wrapper">
-            <img class="header__image" alt="cat in a box" srcset="assets/img/cat-in-a-box-small.png 768w, assets/img/cat-in-a-box-medium.png 992w, assets/img/cat-in-a-box-large.png 1200w">
-            <div class="header__content">
-                <div class="header__title">
-                    <h1 class="headline headline--primery">
-                        כשיש כל כך הרבה אפשרויות,<br>
-                        למה להישאר בקופסא?
-                    </h1>
-                </div>
-                <div class="header__contact">
+        <!-- website header content -->
+        <div id="header-content" class="wrapper section">
+            <!-- header image -->
+            <img class="images__headline" alt="cat in a box" srcset="assets/img/cat-in-a-box-small.png 768w, assets/img/cat-in-a-box-medium.png 992w, assets/img/cat-in-a-box-large.png 1200w">
+            <!-- website title -->
+            <div id="header-overlay" class="section__overlay">
+                <h1 class="headline headline--primery">
+                    כשיש כל כך הרבה אפשרויות,<br>
+                    למה להישאר בקופסא?
+                </h1>
+                <!-- contact me -->
+                <div id="header-contact-me" class="wrapper text--center-atSmall">
                     <h3 class="headline text--brighter-blue">לבניית אתר לעסק</h3>
-                    <a href="#anchor_contact"><button type="button " class="btn headline">צרו קשר</button></a>
-                </div>
-            </div>
-        </div>
+                    <a href="#contact"><button type="button" class="btn headline">צרו קשר</button></a>
+                </div><!-- header-contact-me -->
+            </div><!-- header-overlay -->
+        </div><!-- header-content -->
     </header>
 
 
-    <span id="_about-me" class="section__anchor"></span>
-    <div id="about-me" class="section section--pink">
-        <hr class="seperator">
-        <div class="wrapper wrapper--horizontal section__clearfix">
-            <h2 class="headline revealOnScroll">קצת עליי</h2>
-            <p class="headline headline--secondary revealOnScroll">
+    <!-- about me -->
+    <div id="about-me" class="section__anchor">
+
+        <!-- section content -->
+        <div id="about-me-content" class="wrapper section section__seperator section--pink">
+            <!-- section headline -->
+            <h2 class="headline">קצת עליי</h2>
+            <h4 class="headline headline--secondary">
                 היי, קוראים לי אנה,
                 ואני מעצבת ובונה אתרי אינטרנט
-            </p>
-            <p class="revealOnScroll">
+            </h4>
+            <!-- section text -->
+            <p>
                 מגיל קטן יש לי אהבה לעולם התוכנה, הסקרנות והעניין משכו אותי ללמוד עוד ועוד עצמאית, דרך קורסים ברשת ודרך קורסים באוניברסיטה, המטרה – להעשיר את הידע שלי כמה שאפשר.
                 מכל עולם התוכנה, מאוד התחברתי דווקא לבנייה ולעיצוב אתרים. זהו תחום כל כך רחב עם כל כך הרבה נושאים וכל כך הרבה מגוון אפשר ללמוד ללא הפסקה. אהבתי את התחום בגלל המגוון הגדול הזה, ובשילוב עם העיצוב שעוזר להביע את עצמי ואחרים, דעות ומחשבות, זה הפך לשילוב המושלם עבורי. אז המשכתי ללמוד ולחקור, להשוות טכנולוגיות ושיטות מסוימות, לקרוא כתבות, עד שהרגשתי בטוחה מספיק לצאת עם זה לאוויר.
             </p>
+            <!-- section image -->
             <picture>
                 <source srcset="assets/img/me-smiling-large.png" media="(min-width:1200px)">
                 <source srcset="assets/img/me-smiling-medium.png" media="(min-width:800px)">
-                <img class="images__inside-content revealOnScroll" src="assets/img/me-smiling-small.png" alt="me smiling">
+                <img class="images__inside-content" src="assets/img/me-smiling-small.png" alt="me smiling">
             </picture>
-            <p class="revealOnScroll">
+            <!-- section text -->
+            <p>
                 במקור אני מהמרכז, אבל זה דווקא המעבר לבאר שבע שגרם לי לעשות את הצעד ולהפוך את החלום למציאות. כשהגעתי לבאר שבע ראיתי המון עסקים קטנים עד גדולים, ראיתי שיש להם המון מה להציע, אבל כשנכנסתי לרשת לבדוק קצת מידע – הופתעתי לגלות שכמעט ואין כלום. איך אפשר? חשבתי, אולי הם לא מבינים את הפוטנציאל העסקי בפרסום האינטרנט? רציתי לעזור, כי אני יודעת את הפוטנציאל, ואתרים שבניתי בעבר גם הוכיחו את עצמם לא מעט. האהבה שלי לתחום והרצון לעזור זה מה שגרם לי להחליט לעשות מעשה – והנה אני כאן.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 הידע שלי יעזור לי לבנות לכם את האתר שהכי מתאים לצרכים שלכם, עם המטרה לבנות עיצוב ייחודי ולא מקובע. כל כך הרבה אתרים פשוט משחזרים את אותם העיצובים שוב ושוב, השאיפה היא לעשות משהו שיצא דופן. כמובן שכל עיצוב שתחליטו אני אעשה באהבה, גם תוכלו להביא רעיונות משלכם – אפילו רצוי, ודוגמאות לאתר דומים למה שבראש שלכם, אני פה לעזור לכם באווירה טובה וחיוך.
             </p>
-        </div> <!-- wrapper -->
+        </div><!-- about-me-content -->
+
     </div> <!-- about-me -->
 
-    <span id="_advantages" class="section__anchor"></span>
-    <div id="small-business-first" class="section section--dark text--white">
-        <hr class="seperator">
-        <div class="section__content wrapper--vertical wrapper--horizontal">
-            <div class="section__content--center">
-                <h3 class="wrapper__onSmall-right headline headline--secondary text--center revealOnScroll">
+
+    <!-- adventages -->
+    <div id="advantages" class="section__anchor">
+
+        <!-- adventages introduction -->
+        <div id="advantages-introduction" class="section section__seperator section__content section--dark">
+            <!-- section content -->
+            <div id="advantages-introduction-content" class="wrapper wrapper__onSmall-right section__content--center">
+                <h3 class="headline headline--secondary text--center text--white">
                     יש לי עסק קטן וצנוע,</br>
                     אני בכלל לא צריך אתר ברשת...
                 </h3>
-            </div> <!-- content -->
-        </div> <!-- wrapper -->
+            </div><!-- advantages-introduction-content -->
+            <!-- section image -->
+            <source srcset="assets/img/angry-cat-large.png" media="(min-width:1000px)">
+            <source srcset="assets/img/angry-cat-medium.png" media="(min-width:800px)">
+            <img class="images__seperator images--right images--lower" src="assets/img/angry-cat-small.png" alt="angry grey cat">
+        </div> <!-- advantages-introduction -->
 
-        <source srcset="assets/img/angry-cat-large.png" media="(min-width:1000px)">
-        <source srcset="assets/img/angry-cat-medium.png" media="(min-width:800px)">
-        <img class="images__seperator images--right images--lower" src="assets/img/angry-cat-small.png" alt="angry grey cat">
-    </div> <!-- small-business-first -->
-
-
-    <div id="advantages" class="section section--blue text--pink">
-        <hr class="seperator">
-        <div class="wrapper wrapper--horizontal">
-            <h2 class="headline text--center revealOnScroll">
+        <!-- adventages content -->
+        <div id="advantages-content" class="wrapper section section__seperator section--blue text--pink">
+            <!-- section headline -->
+            <h2 class="headline text--center">
                 למה העסק שלך כן צריך אתר?
             </h2>
-            <p class="revealOnScroll">
+            <!-- section text -->
+            <p>
                 בואו ננסה רגע לחשוב כמו לקוחות.<br>
                 מה אנחנו נעשה אם נרצה למצוא עסק או מוצר מסוים?
                 פעם אולי היינו שואלים חברים או מכרים בתקווה לתשובה, מחפשים מודעות בעיתון או נזכרים באיזה פרסומת בטלוויזיה שראינו, או מטיילים מרכזים מסחריים ומחפשים, אבל דברים השתנו.
@@ -113,232 +126,243 @@
                 כלקוחות חדשים, איך נדע על קיום העסק שלכם אם הוא לא נמצא במאגר המידע שבו כולם משתמשים? למה שנעשה מאמצים לגלות את העסק שלכם כשבלחיצה של כפתור בסמארטפון יש לא מעט עסקים אשר מספקים את כל המידע עליהם ובקלות?
 
             </p>
-            <p class="revealOnScroll">
+            <p>
                 10 סיבות מתוך רבות ללמה העסק שלך צריך אתר:
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>1) הגדלת קהל היעד</strong><br>
                 דרך האינטרנט העסק שלך מגיע לאנשים שאולי לא היו שומעים עליו בחיים בנסיבות אחרות. הוא זוכה ליותר הכרה ללא תלות באזור מגורים, גיל או מין, או קהל הלקוחות הקיים.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>2) היפוך תפקידים</strong><br>
                 זה כבר לא אתה שמחפש את הלקוחות, אלא הלקוחות שמחפשים אותך. אנשים שיגיעו לאתר שלך בדרך כלל אנשים שחיפשו חלק מהשירותים שהעסק שלך מציע, לכן במקום שתפנה לכולם ותקווה שאולי חלק קטן מהם יהיה מעוניין, הלקוחות שכבר רוצים את השירות שלך יגיעו אלייך עם מינימום מאמץ מצדך.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>3) כל המידע החשוב -זמין</strong><br>
                 והוא זמין לכולם. בתור לקוחות הייתם מעדיפים ללכת לעסק כשיש לכם עליו את כל המידע המחוץ או לעסק שהמידע עליו מצומצם מאוד? כמובן שלעסק שיש לכם יותר ידע עליו, כי ככל שיש יותר ידע ככה הלקוח יודע עד כמה השירות שלכם מתאים לו. בנוסף, כבר לא צריך לענות למיליוני שאלות ותמיד ניתן פשוט להפנות אנשים לאתר שלכם שבו יש את כל התשובות.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>4) יותר קל ליצור קשר</strong><br>
                 כל דרכי ההתקשרות עם העסק שלכם מוצגות באתר במקום נגיש, ככה שכל מי שירצה למצוא אתכם או ליצור קשר לא יתקל בבעיה.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>5) אינטרנט זה 24/7</strong><br>
                 מרבית העסקים לא עובדים 27/4, ואין להם מענה בכל שעות היום, למזלנו, לאינטרנט אין שעות פעילות, ולקוח שירצה לקבל מידע מחוץ לשעות העבודה של העסק יכול פשוט להיכנס לאתרכם שיהיה פעיל 24 שעות ביממה 7 ימים בשבוע. בנוסף, ניתן להוסיף אופציה של להשאיר הודעה עם פרטים שתוכלו לחזור ללקוח בשעות הפעילות.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>6) הערך של העסק שלך עולה</strong><br>
                 גם מול עסקים אחרים, לקוחות פוטנציאלים וגם בעיניי הלקוחות שלך, שמאוד יעריכו את ההשקעה שלך בהם ואת הניסיון להקל עליהם. ראיתם פעם עסק גדול ללא אתר? זה לא קיים. כמעט לכל עסק יש אתר, חלקם עם עיצובים זולים, וחלקם משקיעים יותר, בדרך כלל כגודל העסק עולה השקעה. אבל לא צריך לבזבז אלפי שקלים על אתר ענק, אתר מעוצב ומסודר יעשה את העבודה.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>7) התוכן בידיים שלכם</strong><br>
                 אין הגבלות, אין חובות, מה שתרצו יהיה. אפשר להוסיף מפה לעסק (מה שעוזר במקרים רבים כאשר אנשים מתקשים למצוא עסק לפי הכתובת), אפשר להוסיף ביקורות (אפשר גם למיין אותם לפי רצונכם), תמונות של העסק, עמודים של רשתות חברתיות, וכל מה שלבכם חפץ בו.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>8) דרך מעולה לעדכן את הלקוחות שלכם</strong><br>
                 ניתן לעדכן את האתר במבצעים חדשים, מוצרים חדשים, עסקאות, אירועים, וכל דבר שתרצו לעדכן. דרך קלה ופשוטה ולא צריך שום שלט חוצות או מגפונים.
             </p>
-            <p class="wrapper__atMedium-left revealOnScroll">
+            <p class="wrapper__atMedium-left">
                 <strong>9) יתרון על עסקים אחרים</strong><br>
                 לעסקים עם אתר יש יתרון משמעותי על עסקים בלי אתר, כאן אין ספק. ככל שהאתר מוצלח יותר, כך גדלה ההצלחה, אם אתם רוצים לעלות קצת בסולם העסקים, אתר לעסק זה חלק בלתי נפרד מהתהליך.
             </p>
-            <p class="wrapper__atSmall-left revealOnScroll">
+            <p class="wrapper__atSmall-left">
                 <strong>10) לא רק לעסקים</strong><br>
                 אתר לא חייב להיות מיועד רק לעסק, אתר יכול להיות גם סתם מקום להביע את עצמך או את כישורייך, כמו בלוג למשל, הוא יכול להיות גם אתר של תיק עבודות שאפשר לצרף אותו לקורות חיים, מה שיהיה מאוד מרשים עבור המעסיק.
             </p>
+            <!-- section image -->
+            <div id="happy-cat" class="images__container images__container--left">
+                <source srcset="assets/img/happy-cat-large.png" media="(min-width:1000px)">
+                <source srcset="assets/img/happy-cat-medium.png" media="(min-width:800px)">
+                <img class="images__seperator images--left images--higher" src="assets/img/happy-cat-small.png" alt="happy pink cat">
+            </div><!-- happy-cat -->
+        </div><!-- advantages-content -->
 
-        </div><!-- wrapper -->
-
-        <div id="happy-cat" class="images__container images__container--left">
-            <source srcset="assets/img/happy-cat-large.png" media="(min-width:1000px)">
-            <source srcset="assets/img/happy-cat-medium.png" media="(min-width:800px)">
-            <img class="images__seperator images--left images--higher" src="assets/img/happy-cat-small.png" alt="happy pink cat">
-        </div><!-- happy-cat -->
     </div><!-- advantages -->
 
-    <span id="_why-me" class="section__anchor"></span>
-    <div id="small-business-second" class="section section--dark text--white">
-        <hr class="seperator">
-        <div class="section__content wrapper--vertical wrapper--horizontal">
-            <div class="section__content--center">
-                <h3 class="wrapper__onSmall-right headline headline--secondary text--center revealOnScroll">
+
+    <!-- why me -->
+    <div id="why-me" class="section__anchor">
+
+        <!-- why me introduction -->
+        <div id="why-me-introduction" class="section section__seperator section__content section--dark">
+            <!-- section content -->
+            <div id="why-me-introduction-content" class="wrapper wrapper__onSmall-right section__content--center">
+                <h3 class="headline headline--secondary text--center text--white">
                     יש המון אופציות בשוק לאתרים מאוד זולים<br>
                     ואפילו חינמיים של "עשה בעצמך",</br>
                     אז למה שנבחר בך?
                 </h3>
-            </div><!-- content -->
-        </div><!-- wrapper -->
+            </div><!-- why-me-introduction-content -->
+            <!-- section image -->
+            <source srcset="assets/img/snobby-cat-large.png" media="(min-width:1000px)">
+            <source srcset="assets/img/snobby-cat-medium.png" media="(min-width:800px)">
+            <img class="images__seperator images--right images--lower" src="assets/img/snobby-cat-small.png" alt="snobby grey cat">
+        </div><!-- why-me-introduction -->
 
-        <source srcset="assets/img/snobby-cat-large.png" media="(min-width:1000px)">
-        <source srcset="assets/img/snobby-cat-medium.png" media="(min-width:800px)">
-        <img class="images__seperator images--right images--lower" src="assets/img/snobby-cat-small.png" alt="snobby grey cat">
-    </div><!-- small-business-second -->
-
-
-
-    <div id="save-yourself" class="section section--grey text--grey">
-        <hr class="seperator">
-        <div class="wrapper wrapper--horizontal">
-            <h2 class="headline text--center revealOnScroll">אני אעזור לכם לחסוך..</h2>
-            <p class="revealOnScroll">
+        <!-- save yourself -->
+        <div id="save-yourself" class="wrapper section section__seperator section--grey text--grey">
+            <!-- section headline -->
+            <h2 class="headline text--center">אני אעזור לכם לחסוך..</h2>
+            <!-- section text -->
+            <p>
                 החלום שלי הוא לעזור לעסקים בזמן שאני עושה מה שאני אוהבת, אבל עסקים רבים חוששים שזו הוצאה גדולה, ומתפתים לאופציות יותר זולות בשוק כמו פלטפורמות לבניית אתרים שמציעות אתר "חינם", אז תנו לי להראות לכם כמה דברים תוכלו לחסוך אם תחליטו לבחור בי לעזור לכם:
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>תחסכו זמן וכסף</strong><br>
                 מניסיון, כשאין אותו הרבה כסף הולך לאיבוד על אחסון לא מתאים או דומיין לא מוצלח, שלא לדבר על שעות על גבי שעות של למידה של דברים שאתם לא זקוקים להם, שבזמן הזה יכולתם להרוויח הרבה יותר ממה שתשקיעו על האתר אם תבחרו בי. העבודה על האתר, גם כשאתם כבר יודעים את החומר, היא עבודה קשה שלוקחת זמן, על מנת לעשות הכול כראוי צריך לשים לב לכל פרט, וזמן זה דבר יקר כמו שאתם בטח יודעים. יש אנשים שאומרים שזמן = כסף. אבל כסף בא והולך, זמן הולך ולא חוזר. אז תעשו לעצמכם טובה, לכו תנוחו ותשתו כוס קפה, ותנו לי לדאוג לכם בצורה הכי טובה שאוכל.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>תחסכו לעצמכם כאב ראש</strong><br>
                 בנייה ועיצוב אתרים אולי נשמע קל ופשוט, אבל זה נושא מאוד מורחב הכולל בתוכו טכנולוגיות רבות, אלמנטים שונים וגם עיצוב, עריכת תוכן, עריכת תמונות ועוד.. אחרי הרבה למידה ומחקר אני אדע להתאים לכם את הטכנולוגיה המתאימה ביותר, אני אשב על התוכן והעיצוב של האתר גם לבד וגם איתכם, ונעצב אותו ביחד בדיוק כמו שאתם רוצים וחולמים. לי יש את הידע ואת הניסיון, אז תחסכו לעצמכם כאבי ראש.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>תחסכו לעצמכם התעסקות מיותרת</strong><br>
                 אני מציעה לכם תמיכה מלאה בכל שאלה הקשורה לאתר, חבילות של דומיינים ואחסון אתרים ללא צורך לחקור ולחפש מה יותר מוצלח, עדכונים שוטפים לתוכן וגם עדכונים קטנים בעיצוב אם תרצו בעלות שנתית מצחיקה שמורידה מכם את כל האחריות.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>תחסכו לעצמכם עיצובים זולים</strong><br>
                 אתר טוב זה אתר מעוצב. מערכות לבניית אתרים חינמיים מציעות לכם לבחור בין עיצובים קיימים שלא תמיד מתאימים לאופי העסק, ועם אפשרויות עריכה מינימליות הגורמות לאתר להראות זול ובמקרה הגרוע אפילו להרגיש כמו זלזול בלקוח. את העיצוב שלי אני מתחילה מאפס, ביחד איתכם אנחנו יוצרים אתר שיתאים בדיוק לעסק שלכם. ישנה אפשרות להוסיף תוספים שברוב המקרים לא קיימים או עולים כסף באתרים "בחינם" כמו למשל גלריות של תמונות בעיצובים שונים, תפריטים מגוונים וכל מה שיעלה בראשכם.
             </p>
-            <p class="revealOnScroll">
+            <p>
                 <strong>תחסכו זמן וחבילת גלישה ללקוחות שלכם</strong><br>
                 אחד הדברים שאני יותר שמה דגש אליהם באתר זה המהירות שלו. אתר צריך להיות מהיר. כמובן שככל שהוא עמוס יותר בתוספים זה יאט את האתר, אבל אני אשאג לעשות את מירב המאמצים. בין אם לבחור את הטכנולוגיה המתאימה, ליצור אתר רספונסיבי ולדאוג לגדלים של התמונות שיתאימו את עצמן למסך, ללא צורך להוריד תמונות גדולות במסכים קטנים וכך לשמור על חבילת הגלישה וגם על חווית המשתמש באתר.
             </p>
-            <p class="wrapper__atMedium-left revealOnScroll">
+            <p class="wrapper__atMedium-left">
                 <strong>תחסכו לכולם פרסומות</strong><br>
                 באתרים זולים ו"חינמיים" רבים מוסיפים פרסומות לא קשורות לעסק עצמו. באתרים שלי אין דבר כזה אלא אם כן תבקשו להוסיף (ניתן להרוויח מעט מפרסומות באתר, אך הן פוגעות מראה שלו, בחירה זאת לשיקולכם).
             </p>
-            <p class="wrapper__atSmall-left revealOnScroll">
+            <p class="wrapper__atSmall-left">
                 <strong>תחסכו תחרות</strong><br>
                 אם תיכנסו לגוגל ותחפשו עסקים, תגלו שהאתרים היותר מעוצבים ושנראים יותר מקצועי מופיעים בראש הרשימה. זה בגלל שהאתרים האלה נעשים על ידי איש מקצוע שיודע איך להרים את האתר שלכם בחיפוש, משהו שכמעט תמיד חסר באתרים זולים. תנו לי לעלות אתכם ברשימה של מנוע החיפוש ולהקטין את התחרות בין האתרים האחרים.
             </p>
-        </div><!-- wrapper -->
-        <div id="smart-cat" class="images__container images__container--left">
-            <source srcset="assets/img/smart-cat-large.png" media="(min-width:1000px)">
-            <source srcset="assets/img/smart-cat-medium.png" media="(min-width:800px)">
-            <img class="images__seperator images--left" src="assets/img/smart-cat-small.png" alt="smart pink cat">
-        </div><!-- smart-cat -->
-    </div><!-- save-yourself -->
+            <!-- section image -->
+            <div id="smart-cat" class="images__container images__container--left">
+                <source srcset="assets/img/smart-cat-large.png" media="(min-width:1000px)">
+                <source srcset="assets/img/smart-cat-medium.png" media="(min-width:800px)">
+                <img class="images__seperator images--left" src="assets/img/smart-cat-small.png" alt="smart pink cat">
+            </div><!-- smart-cat -->
+        </div><!-- save-yourself -->
 
-    <div id="why-me" class="section section--orange text--orange">
-        <hr class="seperator">
-        <div class="wrapper wrapper--horizontal text--center">
-            <h2 class="headline revealOnScroll">למה אני?</h2>
-            <br>
-            <div class="row">
-                <div class="row__col-sm-6 wrapper revealOnScroll">
-                    <img class="images__icons" src="assets/img/responsive.png" alt="responsive design">
-                    <p>
-                        <strong>עיצוב רספונסיבי</strong><br>
-                        מתאים לכל המסכים, <br>
-                        מגדולים ועד קטנים.
-                    </p>
-                </div>
-                <div class="row__col-sm-6 wrapper revealOnScroll">
-                    <img class="images__icons" src="assets/img/fast.png" alt="fast website">
-                    <p>
-                        <strong>מהירות</strong><br>
-                        אתרים שעולים מהר וחסכוניים באינטרנט
-                        – לא על חשבון איכות העיצוב!
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="row__col-sm-6 wrapper revealOnScroll">
-                    <img class="images__icons" src="assets/img/support.png" alt="full support">
-                    <p>
-                        <strong>תמיכה מלאה</strong><br>
-                        אפשרות לתמיכה מלאה בכל נושא שקשור לאתר,
-                        כולל סאב-דומיין ואחסון האתר
-                    </p>
-                </div>
-                <div class="row__col-sm-6 wrapper revealOnScroll">
-                    <img class="images__icons" src="assets/img/technology.png" alt="latest technology">
-                    <p>
-                        <strong>טכנולוגיה מתקדמת</strong><br>
-                        שימוש בטכנולוגיה חדשה לשיפור <br>
-                        יעילות ועיצוב האתר
-                    </p>
-                </div>
-            </div>
-            <p class="revealOnScroll">
-                <strong>עיצוב</strong><br>
-                אני תמיד שאופת לעיצוב לא שיגרתי שתופס את העין. <br>
-                השאיפה היא לצאת מהקופסא ולהבדיל את האתר שלכם משאר האתרים בשוק. <br>
-                כמובן שכל רעיון שלכם ורצון שלכם הוא מעל הכול והאתר יעוצב בדיוק כמו שרציתם.
-            </p>
-        </div><!-- wrapper -->
+        <!-- why me content -->
+        <div id="why-me-content" class="wrapper section section__seperator section--orange text--orange">
+            <div id="why-me-content-text" class="text--center text--orange">
+                <!-- section headline -->
+                <h2 class="headline text--center">למה אני?</h2>
+                <br>
+                <!-- section content -->
+                <div class="row">
+                    <div id="responsive-design" class="wrapper row__col-sm-6">
+                        <img class="images__icons" src="assets/img/responsive.png" alt="responsive design">
+                        <p>
+                            <strong>עיצוב רספונסיבי</strong><br>
+                            מתאים לכל המסכים, <br>
+                            מגדולים ועד קטנים.
+                        </p>
+                    </div><!-- responsive-design -->
+                    <div id="fast-website" class="wrapper row__col-sm-6">
+                        <img class="images__icons" src="assets/img/fast.png" alt="fast website">
+                        <p>
+                            <strong>מהירות</strong><br>
+                            אתרים שעולים מהר וחסכוניים באינטרנט
+                            – לא על חשבון איכות העיצוב!
+                        </p>
+                    </div><!-- fast-website -->
+                </div><!-- row -->
+                <div class="row">
+                    <div id="full-support" class="wrapper row__col-sm-6">
+                        <img class="images__icons" src="assets/img/support.png" alt="full support">
+                        <p>
+                            <strong>תמיכה מלאה</strong><br>
+                            אפשרות לתמיכה מלאה בכל נושא שקשור לאתר,
+                            כולל סאב-דומיין ואחסון האתר
+                        </p>
+                    </div><!-- full-support -->
+                    <div id="latest-technology" class="wrapper row__col-sm-6">
+                        <img class="images__icons" src="assets/img/technology.png" alt="latest technology">
+                        <p>
+                            <strong>טכנולוגיה מתקדמת</strong><br>
+                            שימוש בטכנולוגיה חדשה לשיפור <br>
+                            יעילות ועיצוב האתר
+                        </p>
+                    </div><!-- latest-technology -->
+                </div><!-- row -->
+                <p>
+                    <strong>עיצוב</strong><br>
+                    אני תמיד שאופת לעיצוב לא שיגרתי שתופס את העין. <br>
+                    השאיפה היא לצאת מהקופסא ולהבדיל את האתר שלכם משאר האתרים בשוק. <br>
+                    כמובן שכל רעיון שלכם ורצון שלכם הוא מעל הכול והאתר יעוצב בדיוק כמו שרציתם.
+                </p>
+            </div><!-- why-me-content-text -->
+        </div><!-- why-me-content -->
 
     </div><!-- why-me -->
 
-    <span id="_plans" class="section__anchor"></span>
-    <div id="small-business-thired" class="section section--dark text--white">
-        <hr class="seperator">
-        <div class="section__content wrapper--vertical wrapper--horizontal">
-            <div class="section__content--center">
-                <h3 class="wrapper__onSmall-right headline headline--secondary text--center revealOnScroll">
+
+    <!-- plans -->
+    <div id="plans" class="section__anchor">
+
+        <!-- plans introduction -->
+        <div id="plans-introduction" class="section section__seperator section__content section--dark">
+            <!-- section content -->
+            <div id="plans-introduction-content" class="wrapper wrapper__onSmall-right section__content--center">
+                <h3 class="headline headline--secondary text--center text--white">
                     כל כך הרבה עבודה והשקעה באתר,<br>
                     זאת בטח תהיה הוצאה מאוד גדולה...
                 </h3>
-            </div><!-- content -->
-        </div><!-- wrapper -->
+            </div><!-- plans-introduction-content -->
+            <!-- section image -->
+            <source srcset="assets/img/scared-cat-large.png" media="(min-width:1000px)">
+            <source srcset="assets/img/scared-cat-medium.png" media="(min-width:800px)">
+            <img class="images__seperator images--right" src="assets/img/scared-cat-small.png" alt="worried grey cat">
+        </div><!-- plans-introduction -->
 
-        <source srcset="assets/img/scared-cat-large.png" media="(min-width:1000px)">
-        <source srcset="assets/img/scared-cat-medium.png" media="(min-width:800px)">
-        <img class="images__seperator images--right" src="assets/img/scared-cat-small.png" alt="worried grey cat">
-
-    </div><!-- small-business-thired -->
-
-
-
-
-    <div id="plans" class="section section--pink-dark text--pink">
-        <hr class="seperator">
-        <div class="wrapper wrapper--horizontal text--center">
-            <h2 class="headline revealOnScroll">התוכניות שלנו</h2>
-            <p class="revealOnScroll">
+        <!-- plans content -->
+        <div id="plans-content" class="wrapper section section__seperator section--pink-dark text--pink text--center">
+            <!-- section headline -->
+            <h2 class="headline text--center">התוכניות שלנו</h2>
+            <!-- section text -->
+            <p>
                 בניית אתר אינטרנט דורש הרבה עבודה והשקעה, <br>
                 ואני מציעה לכם את המחיר הנמוך ביותר המתאפשר לי <br>
                 ביחס לכמות העבודה שהמושקעת באתר. <br>
             </p>
-
-            <div class="revealOnScroll">
-                <p class="section__box section__border wrapper">
-                    <strong class="headline headline--secondary">תמיכה מלאה</strong> - 100 ש"ח לשנה<br>
-                    חבילה הכוללת תמיכה מלאה, <br>
-                    עריכת תוכן ועדכונים, <br>
-                    סאב דומיין לאתר ואחסון.
-                </p>
-            </div>
-            <div class="revealOnScroll">
-                <p class="section__box section__border wrapper">
-                    <strong class="headline headline--secondary">תוכנית קטנה</strong> - 500 ש"ח<br>
-                    בניית האתר בלבד כאשר <br>
-                    יש עיצוב ותוכן מוכנים.<br>
-                    - לזמן מוגבל - <br>
-                    חבילת תמיכה מלאה לשנה בחינם!
-                </p>
-            </div>
-            <div class="revealOnScroll">
-                <p class="section__box section__border wrapper">
-                    <strong class="headline headline--secondary">תוכנית מלאה</strong> - 1000 ש"ח<br>
-                    בניית אתר מאפס, <br>
-                    כולל תוכן ועיצוב.<br>
-                    - לזמן מוגבל - <br>
-                    חבילת תמיכה מלאה לשנה בחינם!
-                </p>
-            </div>
-            <div id="small-letters" class="text--right text--small wrapper__atSmall-left revealOnScroll">
+            <!-- plans items -->
+            <form id="my-plans">
+                <!-- plan one -->
+                <fieldset id="plan-one" class="section__box">
+                    <legend align="center" class="headline headline--secondary">תמיכה מלאה</legend>
+                    <p>
+                        חבילה הכוללת תמיכה מלאה, <br>
+                        עריכת תוכן ועדכונים, <br>
+                        סאב דומיין לאתר ואחסון.
+                    </p>
+                    <strong> 100 ש"ח לשנה</strong>
+                </fieldset><!-- plan-one -->
+                <!-- plan two -->
+                <fieldset id="plan-two">
+                    <legend align="center" class="headline headline--secondary">תוכנית קטנה</legend>
+                    <p>
+                        בניית האתר בלבד כאשר <br>
+                        יש עיצוב ותוכן מוכנים.<br>
+                        - לזמן מוגבל - <br>
+                        חבילת תמיכה מלאה לשנה בחינם!
+                    </p>
+                    <strong> 500 ש"ח </strong>
+                </fieldset><!-- plan-two -->
+                <!-- plan three -->
+                <fieldset id="plan-three">
+                    <legend align="center" class="headline headline--secondary">תוכנית מלאה</legend>
+                    <p>
+                        בניית אתר מאפס, <br>
+                        כולל תוכן ועיצוב.<br>
+                        - לזמן מוגבל - <br>
+                        חבילת תמיכה מלאה לשנה בחינם!
+                    </p>
+                    <strong> 1000 ש"ח </strong>
+                </fieldset><!-- plan-three -->
+            </form><!-- my-plans -->
+            <!-- small letters -->
+            <div id="small-letters" class="text--right text--small wrapper__atSmall-left   ">
                 <p>
                     *אתם יכולים לספק דומיין אישי שלכם או לשלם עבור דומיין אישי שאני ארכוש עבורכם
                 </p>
@@ -347,123 +371,124 @@
                     עבור בלוג/ חנות אינטרנטית/ אתר יותר מורכב
                     ניתן לשלוח הצעת מחיר – צרו קשר.
                 </p>
-
             </div> <!-- small-letters -->
-        </div><!-- wrapper -->
-        <div id="cat-with-butterfly" class="images__container images__container--left">
-            <source srcset="assets/img/cat-with-butterfly-large.png" media="(min-width:1000px)">
-            <source srcset="assets/img/cat-with-butterfly-medium.png" media="(min-width:800px)">
-            <img class="images__seperator images--left images--top" src="assets/img/cat-with-butterfly-small.png" alt="pink cat with butterfly">
-        </div><!-- cat-with-butterfly -->
+            <!-- section image -->
+            <div id="cat-with-butterfly" class="images__container images__container--left">
+                <source srcset="assets/img/cat-with-butterfly-large.png" media="(min-width:1000px)">
+                <source srcset="assets/img/cat-with-butterfly-medium.png" media="(min-width:800px)">
+                <img class="images__seperator images--left images--top" src="assets/img/cat-with-butterfly-small.png" alt="pink cat with butterfly">
+            </div><!-- cat-with-butterfly -->
+        </div><!-- plans-content -->
+
     </div><!-- plans -->
 
 
-    <span id="_contact" class="section__anchor"></span>
-    <div id="contact" class="section section--dark text--white wrapper--bottom">
-        <hr class="seperator">
-        <div class="text--center wrapper--vertical wrapper--horizontal">
-            <form>
-                <fieldset class="section__border">
-                    <legend align="center" class="headline wrapper revealOnScroll">צרו קשר</legend>
-                    <div c;ass="revealOnScroll">
-                        <p class="text--small">
+    <!-- contact -->
+    <div id="contact" class="section__anchor">
+
+        <!-- contact-content -->
+        <div id="contact-content" class="section section__seperator section--dark text--white text--center">
+            <!-- contact me form -->
+            <form id="contant-me" class="section section--smaller">
+                <fieldset>
+                    <!-- contact me headline -->
+                    <legend align="center" class="headline">צרו קשר</legend>
+
+                    <!-- my details -->
+                    <div id="my-details" class="section">
+                        <p>
                             אנה בלקין <br>
                             באר שבע, דרום ישראל
                         </p>
                         <a target="_blank" href="https://github.com/anniebelkin">
-                            <span class="icon icon--github" alt="github"></span>
+                            <svg class="icon icon--github" alt="github"></svg>
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/in/anniebelkin/">
-                            <span class="icon icon--linkedin" alt="linked in"></span>
+                            <svg class="icon icon--linkedin" alt="linked in"></svg>
                         </a>
                         <a target="_blank" href="https://m.me/AnnieBelkin97">
-                            <span class="icon icon--chat" alt="facebook chat"></span>
+                            <svg class="icon icon--chat" alt="facebook chat"></svg>
                         </a>
                         <a target="_blank" href="https://www.facebook.com/AnnieBelkin97">
-                            <span class="icon icon--facebook" alt="facebook"></span>
+                            <svg class="icon icon--facebook" alt="facebook"></svg>
                         </a>
                         <br>
-                    </div>
+                    </div><!-- my-details -->
 
-                    <div class="revealOnScroll">
+                    <!-- my resume -->
+                    <div id="my-resume" class="section">
+                        <!-- section headline -->
                         <hr>
                         <h4 class="headline headline--secondary"> קורות חיים </h4>
+                        <!-- my resume in Hebrew -->
                         <button type="button" class="btn"><a href="/images/myw3schoolsimage.jpg" download>עברית</a></button>
+                        <!-- my resume in English -->
                         <button type="button" class="btn"><a href="/images/myw3schoolsimage.jpg" download>אנגלית</a></button><br>
-                    </div>
-                    <div class="revealOnScroll">
+                    </div><!-- my-resume -->
+
+                    <!-- message me -->
+                    <div id="message-me" class="section">
+                        <!-- section headline -->
                         <hr>
                         <h4 class="headline headline--secondary"> שלחו לי הודעה </h4>
                         <hr>
 
-                        <div clas="row">
-                            <div class="row__col-md-3">
-                                <label for="name">שם מלא:</label>
-                            </div>
-                            <div class="row__col-md-9">
-                                <input type="text" id="name" name="fullname" placeholder="שמך המלא" required>
-                            </div>
-                        </div>
-                        <div clas="row">
-                            <div class="row__col-md-3">
-                                <label for="phone">פלאפון נייד:</label>
-                            </div>
-                            <div class="row__col-md-9">
-                                <input type="tel" id="phone" name="phone" placeholder="מספר הטלפון הנייד שלכם">
-                            </div>
-                        </div>
-                        <div clas="row">
-                            <div class="row__col-md-3">
-                                <label for="email">דואר אלקטרוני:</label>
-                            </div>
-                            <div class="row__col-md-9">
-                                <input type="email" id="email" name="email" placeholder="האימייל שלכם" required><br>
-                            </div>
-                        </div>
-                        <div clas="row">
-                            <div class="row__col-md-3">
-                                <label for="subject">נושא הפנייה:</label>
-                            </div>
-                            <div class="row__col-md-9">
-                                <textarea id="subject" name="subject" role="textbox" rows="5" placeholder="כתבו משהו..." required></textarea>
-                            </div>
-                        </div>
+                        <!-- name -->
+                        <div id="your-name" clas="row">
+                            <label for="name" class="row__col-md-3">שם מלא:</label>
+                            <input id="name" class="row__col-md-9" type="text" name="fullname" placeholder="שמך המלא" required>
+                        </div><!-- your-name -->
 
-                        <div class="text--left">
+                        <!-- phone -->
+                        <div id="your-phone" clas="row">
+                            <label for="phone" class="row__col-md-3">פלאפון נייד:</label>
+                            <input id="phone" class="row__col-md-9" type="tel" name="phone" placeholder="מספר הטלפון הנייד שלכם">
+                        </div><!-- your-phone -->
+
+                        <!-- email -->
+                        <div id="your-email" clas="row">
+                            <label for="email" class="row__col-md-3">דואר אלקטרוני:</label>
+                            <input id="email" class="row__col-md-9" type="email" name="email" placeholder="האימייל שלכם" required><br>
+                        </div><!-- your-email -->
+
+                        <!-- message -->
+                        <div id="your-message" clas="row">
+                            <label for="subject" class="row__col-md-3">נושא הפנייה:</label>
+                            <textarea id="subject" class="row__col-md-9" name="subject" role="textbox" rows="5" placeholder="כתבו משהו..." required></textarea>
+                        </div><!-- your-message -->
+
+                        <!-- send and reset buttons -->
+                        <div id="contact-btn" class="text--left">
                             <button type="reset" class="btn btn__secondary">אפס</button>
                             <button type="submit" class="btn btn__submit headline headline--secondary">שלח</button>
-                        </div>
-                    </div>
+                        </div><!-- contact-btn -->
+
+                    </div><!-- message-me -->
 
                 </fieldset>
-            </form>
+            </form><!-- contact-me -->
+        </div><!-- contact-me -->
 
-        </div><!-- wrapper -->
-        <div id="" class="wrapper--horizontal section__clearfix">
-            <source srcset="assets/img/playful-cat-large.png" media="(min-width:1000px)">
-            <source srcset="assets/img/playful-cat-medium.png" media="(min-width:800px)">
-            <img class="images--right images--smaller" src="assets/img/playful-cat-small.png" alt="pink playful cat">
-            <source srcset="assets/img/satisfied-cat-large.png" media="(min-width:1000px)">
-            <source srcset="assets/img/satisfied-cat-medium.png" media="(min-width:800px)">
-            <img class="images--left images--smaller" src="assets/img/satisfied-cat-small.png" alt="pink satisfied cat">
-        </div>
     </div><!-- contact -->
 
+
+    <!-- website header -->
     <footer class="navbar navbar--bottom">
         <a target="_blank" href="https://github.com/anniebelkin">
-            <span class="icon icon--github" alt="github"></span>
+            <svg class="icon icon--github" alt="github"></svg>
         </a>
         <a target="_blank" href="https://www.linkedin.com/in/anniebelkin/">
-            <span class="icon icon--linkedin" alt="linked in"></span>
+            <svg class="icon icon--linkedin" alt="linked in"></svg>
         </a>
         <a target="_blank" href="https://m.me/AnnieBelkin97">
-            <span class="icon icon--chat" alt="facebook chat"></span>
+            <svg class="icon icon--chat" alt="facebook chat"></svg>
         </a>
         <a target="_blank" href="https://www.facebook.com/AnnieBelkin97">
-            <span class="icon icon--facebook" alt="facebook"></span>
+            <svg class="icon icon--facebook" alt="facebook"></svg>
         </a>
     </footer>
 
+    <!-- my JS files -->
     <script src="temp/scripts/App.js"></script>
 
 </body>
