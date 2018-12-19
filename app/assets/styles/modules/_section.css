@@ -16,7 +16,7 @@
         padding-top: 30px;
         margin-top: -30px;
     }
-    
+
     /* seperator between sections */
     &__seperator {
         border-top: 2px solid $brown-Pink;
@@ -30,7 +30,7 @@
             border-top-width: 6px;
         }
     }
-    
+
     /* place content vertically centered */
     &__content {
         min-height: inherit;
@@ -42,12 +42,6 @@
             display: table-cell;
             vertical-align: middle;
         }
-    }
-
-    /* overlay something over the section */
-    &__overlay {
-        position: absolute;
-        min-height: 100px;
     }
 
     /* section background colors: */

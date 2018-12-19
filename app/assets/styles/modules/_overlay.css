@@ -1,0 +1,61 @@
+/* _overlay.css */
+.overlay {
+    /* position */
+    position: absolute;
+    /* minimum size */
+    min-height: 100px;
+
+    /* minimum size on larger screens */
+    @mixin atSmall {
+        min-height: 150px;
+    }
+
+    @mixin atMedium {
+        min-height: 180px;
+    }
+
+    @mixin atLarge {
+        min-height: 200px;
+    }
+
+    /* element positions */
+    &--left {
+        left: 20px;
+        float: left;
+    }
+    
+    &--right {
+            right: 10px;
+            float: right;
+        }
+
+    &--bottom {
+        bottom: 0;
+    }
+
+    /* overlay image */
+    &__image {
+        /* size */
+        max-height: 130%;
+        width: auto;
+        /* position */
+        position: absolute;
+        top: 0;
+        z-index: 2;
+
+        /* positions adjustments */
+        &--higher-5 {
+            top: -5%;
+        }
+
+        &--higher-15 {
+            top: -15%
+        }
+
+        &--higher-20 {
+            top: -20%;
+        }
+    }
+
+
+}

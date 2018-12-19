@@ -739,112 +739,61 @@ a {
 
 /* _images.css */
 
-.images__container {
-        min-height: 100px;
-        position: absolute;
-        bottom: 0;
-    }
+.images {
+    /* size */
+    max-width: 45%;
+    height: auto;
+    /* position */
+    float: left;
+}
 
-.images__container--left {
-            left: 0;
-        }
-
-.images__container--right {
-            right: 0;
-        }
-
-@media (min-width: 600px) {
-
-.images__container {
-            min-height: 150px
-    }
-    }
-
-@media (min-width: 800px) {
-
-.images__container {
-            min-height: 180px
-    }
-    }
-
-@media (min-width: 1000px) {
-
-.images__container {
-            min-height: 200px
-    }
-    }
-
-.images__seperator {
-        min-height: 130%;
-        max-height: 130%;
-        position: absolute;
-        width: auto;
-        z-index: 2;
-        top: -15%;
-    }
-
-.images--left {
-        left: 20px;
-        float: left;
-    }
-
-.images--right {
-        right: 10px;
-        float: right;
-    }
-
-.images--higher {
-        top: -20%;
-    }
-
-.images--lower {
-        top: -5%;
-    }
+/* move image on top of the parent element */
 
 .images--top {
-        top: 0;
-    }
-
-.images--smaller {
-        max-width: 25%;
-        height: auto;
-    }
-
-.images__icons {
-        max-width: 50%;
-        height: auto;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-.images__inside-content {
-        max-width: 100%;
-        height: auto;
-    }
-
-@media (min-width: 800px) {
-
-.images__inside-content {
-            float: left;
-            max-width: 30%;
-            padding-right: 20px;
-            padding-bottom: 0
-    }
-    }
-
-.images__headline {
-        float: left;
+        /* position on top */
         position: relative;
-        max-width: 400px;
-        height: auto;
         top: 20px;
     }
 
+/* less top spacing on larger screens */
+
 @media (min-width: 600px) {
 
-.images__headline {
+.images--top {
             top: 0
+    }
+    }
+
+/* move image to the center of the parent element */
+
+.images--center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        /* disable floating */
+        float: none;
+    }
+
+/* make image full width on small screens */
+
+.images--full-width-onSmall {
+        /* size */
+        max-width: 100%;
+        /* no float needed in full-screen image */
+        float: none;
+    }
+
+/* back to default on larger screens */
+
+@media (min-width: 600px) {
+
+.images--full-width-onSmall {
+            /* size */
+            max-width: 45%;
+            /* position */
+            float: left;
+            /* spacing for content from right side of the image */
+            padding-right: 10px
     }
     }
 
@@ -1161,13 +1110,6 @@ a {
             vertical-align: middle;
         }
 
-/* overlay something over the section */
-
-.section__overlay {
-        position: absolute;
-        min-height: 100px;
-    }
-
 /* section background colors: */
 
 .section--pink {
@@ -1300,4 +1242,86 @@ Instead edit gulp/templates/sprite */
             background-position: 0 100%;
             width: 24px;
             height: 24px;
+        }
+
+/* _overlay.css */
+
+.overlay {
+    /* position */
+    position: absolute;
+    /* minimum size */
+    min-height: 100px;
+
+
+}
+
+/* minimum size on larger screens */
+
+@media (min-width: 600px) {
+
+.overlay {
+        min-height: 150px
+
+
+}
+    }
+
+@media (min-width: 800px) {
+
+.overlay {
+        min-height: 180px
+
+
+}
+    }
+
+@media (min-width: 1000px) {
+
+.overlay {
+        min-height: 200px
+
+
+}
+    }
+
+/* element positions */
+
+.overlay--left {
+        left: 20px;
+        float: left;
+    }
+
+.overlay--right {
+            right: 10px;
+            float: right;
+        }
+
+.overlay--bottom {
+        bottom: 0;
+    }
+
+/* overlay image */
+
+.overlay__image {
+        /* size */
+        max-height: 130%;
+        width: auto;
+        /* position */
+        position: absolute;
+        top: 0;
+        z-index: 2;
+    }
+
+/* positions adjustments */
+
+.overlay__image--higher-5 {
+            top: -5%;
+        }
+
+.overlay__image--higher-15 {
+            top: -15%
+        }
+
+.overlay__image--higher-20 {
+            top: -20%;
         }
