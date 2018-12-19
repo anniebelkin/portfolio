@@ -679,12 +679,14 @@ a {
     }
     }
 
-/* _row.css */
+/* _grid.css */
+
+/* row */
 
 .row {
+    /* size */
     width: 100%;
     height: auto;
-
 }
 
 .row::after {
@@ -693,48 +695,53 @@ a {
         display: table;
     }
 
-.row__col-md-3 {
-        margin-top: 5px;
-        float: right;
-        width: 100%;
-    }
+/* column */
+
+.col {
+    /* size at breakpoint */
+    width: 100%;
+    /* position */
+    float: right;
+    /*spacing */
+    margin-top: 5px;
+}
+
+/* breakpoint on medium screen size */
+
+/* more spacing top on medium screen size */
 
 @media (min-width: 800px) {
 
-.row__col-md-3 {
-            margin-top: 10px;
-            width: 25%
+.col--md {
+            margin-top: 10px
     }
     }
 
-.row__col-sm-6 {
-        margin-top: 5px;
-        float: right;
-        width: 100%;
-
-    }
-
-@media (min-width: 600px) {
-
-.row__col-sm-6 {
-            margin-top: 10px;
-            width: 50%
-
-    }
-    }
-
-.row__col-md-9 {
-        margin-top: 5px;
-        float: right;
-        width: 100%;
-    }
+/* width: 25% */
 
 @media (min-width: 800px) {
 
-.row__col-md-9 {
-            margin-top: 10px;
-            width: 75%
+.col--md--3 {
+                width: 25%
+        }
     }
+
+/* width: 50% */
+
+@media (min-width: 800px) {
+
+.col--md--6 {
+                width: 50%
+        }
+    }
+
+/* width: 50% */
+
+@media (min-width: 800px) {
+
+.col--md--9 {
+                width: 75%
+        }
     }
 
 /* _images.css */
@@ -1287,7 +1294,7 @@ Instead edit gulp/templates/sprite */
 /* element positions */
 
 .overlay--left {
-        left: 20px;
+        left: 10px;
         float: left;
     }
 

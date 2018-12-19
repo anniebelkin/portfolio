@@ -1,0 +1,50 @@
+/* _grid.css */
+
+/* row */
+.row {
+    /* size */
+    width: 100%;
+    height: auto;
+
+    @mixin clearfix;
+}
+
+/* column */
+.col {
+    /* size at breakpoint */
+    width: 100%;
+    /* position */
+    float: right;
+    /*spacing */
+    margin-top: 5px;
+
+    /* breakpoint on medium screen size */
+    &--md {
+
+        /* more spacing top on medium screen size */
+        @mixin atMedium {
+            margin-top: 10px;
+        }
+
+        /* width: 25% */
+        &--3 {
+            @mixin atMedium {
+                width: 25%;
+            }
+        }
+
+        /* width: 50% */
+        &--6 {
+            @mixin atMedium {
+                width: 50%;
+            }
+        }
+
+        /* width: 50% */
+        &--9 {
+            @mixin atMedium {
+                width: 75%;
+            }
+        }
+    }
+}
