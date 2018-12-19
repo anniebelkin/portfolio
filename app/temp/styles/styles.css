@@ -851,17 +851,22 @@ a {
 /* _navbar.css */
 
 .navbar {
-    min-height: 30px;
-    max-height: 30px;
+    /* spacing */
+    padding: 0 5px;
+    /* styling */
+    background-color: rgba(206,188,198, 0.95);
+    /* navbar size */
+    height: 30px;
     width: 100%;
     max-width: 960px;
+    /* fix navbar */
     position: fixed;
     z-index: 5;
+    /* navbar animation */
     -webkit-transition: all .5s ease-out;
     -o-transition: all .5s ease-out;
     -moz-transition: all .5s ease-out;
     transition: all .5s ease-out;
-    background-color: rgba(206,188,198, 0.95);
 
 
 }
@@ -872,47 +877,74 @@ a {
         display: table;
     }
 
+/* sticky top */
+
 .navbar--top {
         top: 0;
         border-bottom: 1px solid #CEBCC6;
     }
 
+/* sticky bottom */
+
 .navbar--bottom {
         bottom: 0;
         border-top: 1px solid #CEBCC6;
+        padding-top: 2px;
     }
+
+/* navbar height when mobile menu is extended */
 
 .navbar--is-extended {
-        max-height: 200px;
+        height: 200px;
     }
 
+/* shrink height back to normal in larger screens */
+
+@media (min-width: 600px) {
+
+.navbar--is-extended {
+            height: 30px
+    }
+    }
+
+/* navbars menu */
+
 .navbar__menu {
+        /* spacing */
+        padding: 2.5px;
+        /* visabillity */
         opacity: 0;
         visibility: collapse;
+        /* text styling */
         text-align: center;
-        padding: 10px;
         color: #FAF5F8;
+        /* opacity animation */
         -webkit-transition: opacity 1s ease-in-out;
         -o-transition: opacity 1s ease-in-out;
         -moz-transition: opacity 1s ease-in-out;
         transition: opacity 1s ease-in-out;
     }
 
+/* on larger screens show not collapsed navbar */
+
 @media (min-width: 600px) {
 
 .navbar__menu {
-            display: inline;
-            visibility: visible;
+            /* visabillity */
             opacity: 1;
-            padding: 0 0 0 10px;
-            margin-top: 3px;
+            visibility: visible;
+            /* position */
             float: left
     }
     }
 
+/* menu item */
+
 .navbar__menu__item {
             display: block;
         }
+
+/* on larger screens display menu items inline */
 
 @media (min-width: 600px) {
 
@@ -921,21 +953,31 @@ a {
         }
     }
 
+/* extend menu */
+
 .navbar__menu--is-visible {
             opacity: 1;
             visibility: visible;
         }
 
+/* menu icon on mobile devices */
+
 .navbar__menu-icon {
-        position: relative;
-        margin-top: 5px;
-        margin-left: 5px;
+        /* position */
         display: block;
+        position: relative;
         float: left;
+        /* spacing */
+        margin-top: 5px;
+        /* icon size */
         height: 19px;
         width: 20px;
 
+        /* Hamburger menu icon */
+
     }
+
+/* hide on larger screens */
 
 @media (min-width: 600px) {
 
@@ -945,14 +987,20 @@ a {
     }
     }
 
+/* top line */
+
 .navbar__menu-icon::before {
-            content: "";
+            /* position */
             position: absolute;
             top: 0;
             left: 0;
+            /* size */
             width: 20px;
             height: 3px;
+            /* filling */
+            content: "";
             background-color: #FAF5F8;
+            /* menu animation */
             -webkit-transform-origin: 0 0;
                -moz-transform-origin: 0 0;
                 -ms-transform-origin: 0 0;
@@ -966,13 +1014,19 @@ a {
             transition: transform .3s ease-out, -webkit-transform .3s ease-out, -moz-transform .3s ease-out, -o-transform .3s ease-out;
         }
 
+/* middle line */
+
 .navbar__menu-icon__middle {
+            /* position */
             position: absolute;
             top: 8px;
             left: 0;
+            /* size */
             width: 20px;
             height: 3px;
+            /* filling */
             background-color: #FAF5F8;
+            /* menu animation */
             -webkit-transform-origin: 0 50%;
                -moz-transform-origin: 0 50%;
                 -ms-transform-origin: 0 50%;
@@ -984,26 +1038,34 @@ a {
             transition: all .3s ease-out;
         }
 
+/* bottom line */
+
 .navbar__menu-icon::after {
-            content: "";
+            /* position */
             position: absolute;
             bottom: 0;
             left: 0;
+            /* size */
             width: 20px;
             height: 3px;
+            /* filling */
+            content: "";
             background-color: #FAF5F8;
+            /* menu animation */
             -webkit-transform-origin: 0 100%;
                -moz-transform-origin: 0 100%;
                 -ms-transform-origin: 0 100%;
                  -o-transform-origin: 0 100%;
                     transform-origin: 0 100%;
-            -webkit-transition: -webkit-transform .3s ease-out;
-            transition: -webkit-transform .3s ease-out;
-            -o-transition: -o-transform .3s ease-out;
-            -moz-transition: transform .3s ease-out, -moz-transform .3s ease-out;
-            transition: transform .3s ease-out;
-            transition: transform .3s ease-out, -webkit-transform .3s ease-out, -moz-transform .3s ease-out, -o-transform .3s ease-out;
+            -webkit-transition: all .3s ease-out;
+            -o-transition: all .3s ease-out;
+            -moz-transition: all .3s ease-out;
+            transition: all .3s ease-out;
         }
+
+/* transfer menu icon to X when extended */
+
+/* top line */
 
 .navbar__menu-icon--close-x::before {
                 -webkit-transform: rotate(45deg) scaleX(1.23);
@@ -1013,6 +1075,8 @@ a {
                         transform: rotate(45deg) scaleX(1.23);
             }
 
+/* middle line */
+
 .navbar__menu-icon--close-x .navbar__menu-icon__middle {
                 opacity: 0;
                 -webkit-transform: scaleX(0);
@@ -1021,6 +1085,8 @@ a {
                      -o-transform: scaleX(0);
                         transform: scaleX(0);
             }
+
+/* bottom line */
 
 .navbar__menu-icon--close-x::after {
                 -webkit-transform: rotate(-45deg) scaleX(1.23) translateX(-0.5px);
