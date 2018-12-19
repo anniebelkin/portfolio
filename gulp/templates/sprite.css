@@ -3,7 +3,7 @@ Instead edit gulp/templates/sprite */
 
 .icon {
     
-    background-image: url('../../assets/img/icons/sprite.svg'); 
+    background-image: url('../../assets/img/svg/sprite.svg'); 
     background-repeat: no-repeat;
     width: auto;
     height: auto;
@@ -15,5 +15,4 @@ Instead edit gulp/templates/sprite */
             height: {{height.outer}}px;
         }
     {{/shapes}}
-        
 }

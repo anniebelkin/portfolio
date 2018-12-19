@@ -11,7 +11,7 @@ var config = {
         css: {
             dest: '.',
             bust: false,
-            sprite: './img/icons/sprite.svg',
+            sprite: './img/svg/sprite.svg',
             dimensions: true,
             prefix: '',
             render: {
@@ -25,7 +25,7 @@ var config = {
 }
 
 gulp.task('sprite', function () {
-    return gulp.src('./app/assets/img/icons/**/*.svg')
+    return gulp.src('./app/assets/img/svg/icons/**/*.svg')
         .pipe(svgSprite(config))
         .pipe(gulp.dest('./app/assets/'));
 });

@@ -553,18 +553,18 @@ a {
 
 @media (min-width: 600px) {
 
-.text--center-atSmall {
+.text--center-atSmall{
             text-align: center
     }
     }
 
-.text--small {
+.text--small{
         font-size: 0.8rem;
     }
 
 @media (min-width: 600px) {
 
-.text--small {
+.text--small{
             font-size: 1.0rem
     }
     }
@@ -649,10 +649,13 @@ a {
 }
     }
 
+/* placeholders: */
+
 .wrapper__atSmall-left {
         padding-left: 30%;
-
     }
+
+/* left padding on medium screens */
 
 @media (min-width: 800px) {
 
@@ -661,9 +664,13 @@ a {
     }
     }
 
+/* right padding on small screens */
+
 .wrapper__onSmall-right {
         padding-right: 25%;
     }
+
+/* inherit parent right padding for larger screens */
 
 @media (min-width: 600px) {
 
@@ -1029,8 +1036,6 @@ a {
     width: 100%;
     height: auto;
     position: relative;
-
-
 }
 
 .section::after {
@@ -1045,56 +1050,12 @@ a {
         max-width: 80%;
     }
 
-/* section background colors */
-
-.section--pink {
-        background-color: #FAF5F8;
-    }
-
-.section--blue {
-        background-color: rgba(182,209,236, 0.3);
-    }
-
-.section--dark {
-        background-color: rgba(0, 0, 0, 0.7);
-    }
-
-.section--orange {
-        background-color: rgba(255,243,232, 0.3);
-    }
-
-.section--pink-dark {
-        background-color: rgba(206,188,198, 0.5);
-    }
-
 /* offset section for top navbar */
 
 .section__anchor {
         padding-top: 30px;
         margin-top: -30px;
     }
-
-/* overlay something over the section */
-
-.section__overlay {
-        position: absolute;
-        min-height: 100px;
-    }
-
-/* place content vertically centered */
-
-.section__content {
-        min-height: inherit;
-        display: table;
-        min-width: 100%;
-    }
-
-/* centered element */
-
-.section__content--center {
-            display: table-cell;
-            vertical-align: middle;
-        }
 
 /* seperator between sections */
 
@@ -1117,6 +1078,50 @@ a {
 .section__seperator {
             border-top-width: 6px
     }
+    }
+
+/* place content vertically centered */
+
+.section__content {
+        min-height: inherit;
+        display: table;
+        min-width: 100%;
+    }
+
+/* centered element */
+
+.section__content--center {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+/* overlay something over the section */
+
+.section__overlay {
+        position: absolute;
+        min-height: 100px;
+    }
+
+/* section background colors: */
+
+.section--pink {
+        background-color: #FAF5F8;
+    }
+
+.section--blue {
+        background-color: rgba(182,209,236, 0.3);
+    }
+
+.section--dark {
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+.section--orange {
+        background-color: rgba(255,243,232, 0.3);
+    }
+
+.section--pink-dark {
+        background-color: rgba(206,188,198, 0.5);
     }
 
 /* _forms.css */
@@ -1158,82 +1163,75 @@ textarea {
 Instead edit gulp/templates/sprite */
 
 .icon {
-
-    background-image: url('../../assets/img/icons/sprite.svg');
+    
+    background-image: url('../../assets/img/svg/sprite.svg'); 
     background-repeat: no-repeat;
     width: auto;
     height: auto;
-
 }
 
-.icon--chat {
-        background-position: 90.26548672566372% 32.05128205128205%;
-        width: 20px;
-        height: 19px;
-    }
+.icon--chat{
+            background-position: 0 71.42857142857143%;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--chat:hover {
-        background-position: 99.11504424778761% 31.84713375796178%;
-        width: 20px;
-        height: 18px;
-    }
+.icon--chat:hover{
+            background-position: 25.53191489361702% 71.42857142857143%;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--facebook {
-        background-position: 76.82403433476395% 48.38709677419355%;
-        width: 13px;
-        height: 20px;
-    }
+.icon--facebook{
+            background-position: 74.46808510638297% 0;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--facebook:hover {
-        background-position: 99.57081545064378% 48.38709677419355%;
-        width: 13px;
-        height: 20px;
-    }
+.icon--facebook:hover{
+            background-position: 74.46808510638297% 28.571428571428573%;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--full-logo {
-        background-position: 100% 0;
-        width: 67px;
-        height: 25px;
-    }
+.icon--full-logo{
+            background-position: 0 38.46153846153846%;
+            width: 70px;
+            height: 30px;
+        }
 
-.icon--full-logo:hover {
-        background-position: 100% 16.666666666666668%;
-        width: 67px;
-        height: 25px;
-    }
+.icon--full-logo:hover{
+            background-position: 0 0;
+            width: 70px;
+            height: 30px;
+        }
 
-.icon--github {
-        background-position: 88.05309734513274% 61.29032258064516%;
-        width: 20px;
-        height: 20px;
-    }
+.icon--github{
+            background-position: 51.06382978723404% 71.42857142857143%;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--github:hover {
-        background-position: 84.95575221238938% 48.38709677419355%;
-        width: 20px;
-        height: 20px;
-    }
+.icon--github:hover{
+            background-position: 100% 0;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--linkedin {
-        background-position: 93.80530973451327% 48.38709677419355%;
-        width: 20px;
-        height: 20px;
-    }
+.icon--linkedin{
+            background-position: 100% 28.571428571428573%;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--linkedin:hover {
-        background-position: 79.20353982300885% 61.29032258064516%;
-        width: 20px;
-        height: 20px;
-    }
+.icon--linkedin:hover{
+            background-position: 100% 57.142857142857146%;
+            width: 24px;
+            height: 24px;
+        }
 
-.icon--logo {
-        background-position: 80.99547511312217% 33.333333333333336%;
-        width: 25px;
-        height: 25px;
-    }
-
-.icon--sprite {
-        background-position: 0 0;
-        width: 179px;
-        height: 175px;
-    }
+.icon--logo{
+            background-position: 0 100%;
+            width: 24px;
+            height: 24px;
+        }
