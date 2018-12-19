@@ -7,8 +7,8 @@ Instead edit gulp/templates/sprite */
     background-repeat: no-repeat;
     width: auto;
     height: auto;
-    
     {{#shapes}}
+    
     &--{{selector.shape.0.raw}}{
             background-position: {{position.relative.xy}};
             width: {{width.outer}}px;

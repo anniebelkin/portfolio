@@ -13,51 +13,61 @@ Instead edit gulp/templates/sprite */
             width: 24px;
             height: 24px;
         }
+    
     &--chat:hover{
             background-position: 25.53191489361702% 71.42857142857143%;
             width: 24px;
             height: 24px;
         }
+    
     &--facebook{
             background-position: 74.46808510638297% 0;
             width: 24px;
             height: 24px;
         }
+    
     &--facebook:hover{
             background-position: 74.46808510638297% 28.571428571428573%;
             width: 24px;
             height: 24px;
         }
+    
     &--full-logo{
             background-position: 0 38.46153846153846%;
             width: 70px;
             height: 30px;
         }
+    
     &--full-logo:hover{
             background-position: 0 0;
             width: 70px;
             height: 30px;
         }
+    
     &--github{
             background-position: 51.06382978723404% 71.42857142857143%;
             width: 24px;
             height: 24px;
         }
+    
     &--github:hover{
             background-position: 100% 0;
             width: 24px;
             height: 24px;
         }
+    
     &--linkedin{
             background-position: 100% 28.571428571428573%;
             width: 24px;
             height: 24px;
         }
+    
     &--linkedin:hover{
             background-position: 100% 57.142857142857146%;
             width: 24px;
             height: 24px;
         }
+    
     &--logo{
             background-position: 0 100%;
             width: 24px;
