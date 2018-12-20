@@ -1,28 +1,28 @@
 /* _headline.css */
 
 .headline {
-
+    /* no spacing */
     padding: 0;
     margin: 0;
-    font-size: 1.0rem;
-    font-weight: 600;
+    /* font style */
+    font-weight: 900;
     text-shadow: 0.2px 0.2px 1px $grey-Blue;
 
+    /* larger shadow on larger screens : */
     @mixin atSmall {
-        font-size: 1.8rem;
         text-shadow: 0.5px 0.5px 1.5px $grey-Blue;
     }
 
     @mixin atMedium {
-        font-size: 2.4rem;
         text-shadow: 1px 1px 2px $grey-Blue;
     }
 
+    /* main headline */
     &--primery {
+        /* font style */
         font-size: 1.2rem;
-        font-weight: 900;
-        padding: 2px;
 
+        /* larger font size on larger screens : */
         @mixin atSmall {
             font-size: 2.0rem;
         }
@@ -36,37 +36,27 @@
         }
     }
 
+    /* secondary headline */
     &--secondary {
-        font-size: 0.8rem;
-        font-weight: 900;
-        padding-top: 5px;
+        font-size: 1.0rem;
 
+        /* larger font size on larger screens : */
+        @mixin atSmall {
+            font-size: 1.8rem;
+        }
+
+        @mixin atMedium {
+            font-size: 2.4rem;
+        }
+    }
+
+    /* small headline */
+    &--small {
+        font-size: 0.8rem;
+
+        /* larger font size on larger screens : */
         @mixin atSmall {
             font-size: 1.4rem;
         }
-
     }
-
-    &--link {
-
-        font-size: 1.0rem;
-        padding: 5px 0;
-        font-weight: bold;
-        letter-spacing: 0.05rem;
-        text-shadow:
-            -0.5px -0.5px 0 $mainPink,
-            0.5px -0.5px 0 black,
-            -0.5px 0.5px 0 black,
-            0.5px 0.5px 0 black;
-
-        @mixin atSmall {
-            border-right: 1px solid $white-Pink;
-            padding: 0 5px 0 0;
-        }
-
-        &:hover {
-            color: $mainPink-Dark;
-        }
-    }
-
 }

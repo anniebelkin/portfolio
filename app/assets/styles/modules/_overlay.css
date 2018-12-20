@@ -23,11 +23,11 @@
         left: 10px;
         float: left;
     }
-    
+
     &--right {
-            right: 10px;
-            float: right;
-        }
+        right: 10px;
+        float: right;
+    }
 
     &--bottom {
         bottom: 0;

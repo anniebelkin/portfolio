@@ -423,38 +423,38 @@ a {
 /* _headline.css */
 
 .headline {
-
+    /* no spacing */
     padding: 0;
     margin: 0;
-    font-size: 1.0rem;
-    font-weight: 600;
+    /* font style */
+    font-weight: 900;
     text-shadow: 0.2px 0.2px 1px #989FA6;
-
 }
+
+/* larger shadow on larger screens : */
 
 @media (min-width: 600px) {
 
 .headline {
-        font-size: 1.8rem;
         text-shadow: 0.5px 0.5px 1.5px #989FA6
-
 }
     }
 
 @media (min-width: 800px) {
 
 .headline {
-        font-size: 2.4rem;
         text-shadow: 1px 1px 2px #989FA6
-
 }
     }
 
+/* main headline */
+
 .headline--primery {
+        /* font style */
         font-size: 1.2rem;
-        font-weight: 900;
-        padding: 2px;
     }
+
+/* larger font size on larger screens : */
 
 @media (min-width: 600px) {
 
@@ -477,47 +477,46 @@ a {
     }
     }
 
-.headline--secondary {
-        font-size: 0.8rem;
-        font-weight: 900;
-        padding-top: 5px;
-
-    }
-
-@media (min-width: 600px) {
+/* secondary headline */
 
 .headline--secondary {
-            font-size: 1.4rem
-
-    }
-    }
-
-.headline--link {
-
         font-size: 1.0rem;
-        padding: 5px 0;
-        font-weight: bold;
-        letter-spacing: 0.05rem;
-        text-shadow:
-            -0.5px -0.5px 0 #F5B8D9,
-            0.5px -0.5px 0 black,
-            -0.5px 0.5px 0 black,
-            0.5px 0.5px 0 black;
     }
+
+/* larger font size on larger screens : */
 
 @media (min-width: 600px) {
 
-.headline--link {
-            border-right: 1px solid #FAF5F8;
-            padding: 0 5px 0 0
+.headline--secondary {
+            font-size: 1.8rem
     }
     }
 
-.headline--link:hover {
-            color: #F075B9;
-        }
+@media (min-width: 800px) {
+
+.headline--secondary {
+            font-size: 2.4rem
+    }
+    }
+
+/* small headline */
+
+.headline--small {
+        font-size: 0.8rem;
+    }
+
+/* larger font size on larger screens : */
+
+@media (min-width: 600px) {
+
+.headline--small {
+            font-size: 1.4rem
+    }
+    }
 
 /* _text.css */
+
+/* text color: */
 
 .text--pink {
         color: #F34CA7;
@@ -539,6 +538,8 @@ a {
         color: #78AFE4;
     }
 
+/* text align: */
+
 .text--left {
         text-align: left;
     }
@@ -551,20 +552,26 @@ a {
         text-align: center;
     }
 
+/* center text on larger screens */
+
 @media (min-width: 600px) {
 
-.text--center-atSmall{
+.text--center-atSmall {
             text-align: center
     }
     }
 
-.text--small{
+/* font size */
+
+.text--small {
         font-size: 0.8rem;
     }
 
+/* larger font size on larger screens : */
+
 @media (min-width: 600px) {
 
-.text--small{
+.text--small {
             font-size: 1.0rem
     }
     }
@@ -572,64 +579,88 @@ a {
 /* _btn.css */
 
 .btn {
-    background-color: #CEBCC6;
-    border: 1px solid #F34CA7;
-    color: #F34CA7;
-    padding: 5px 10px;
+    /* spacing */
+    padding: 5px 15px;
     margin: 15px;
-    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-       -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    /* border */
+    border: 1px solid #F34CA7;
+    /* font style */
+    text-align: center;
+    text-shadow:
+        -0.5px -0.5px 0 #F5B8D9,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
+    color: #FAF5F8;
+
 }
+
+/* change font color on hover */
+
+.btn:hover {
+        color: #F075B9;
+    }
+
+.btn__link {
+        display: block;
+        /* spacing */
+        padding: 5px;
+        margin: 0;
+        /* no border */
+        border: none;
+        /* font size */
+        font-size: 1.0rem;
+
+    }
+
+/* on larder screens */
 
 @media (min-width: 600px) {
 
-.btn {
-        padding: 5px 15px
-}
+.btn__link {
+            /* display links inline */
+            display: inline;
+            /* seperate links from each other */
+            border-right: 1px solid #FAF5F8;
+            padding: 0 5px 0 0
+
+    }
     }
 
-@media (min-width: 800px) {
+/* primery buttons */
 
-.btn {
-        padding: 5px 20px
-}
+.btn__primery {
+        /* size */
+        min-width: 30%;
+        /* shadow */
+        -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+            0 3px 10px 0 rgba(0, 0, 0, 0.19);
+           -moz-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+            0 3px 10px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+            0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        /* background color */
+        background-color: #F075B9;
     }
 
-@media (min-width: 1000px) {
+/* change background color on hover */
 
-.btn {
-        padding: 5px 25px
-}
-    }
+.btn__primery:hover {
+            background-color: #FAF5F8;
+        }
 
-.btn__logo {
-        max-height: 30px;
-        ;
-        width: auto;
-        padding: 0 2px;
-    }
+/* secondary buttons */
 
 .btn__secondary {
-
+        /* background color */
         background-color: transparent;
-        border: 1px solid #F5B8D9;
-        color: #F5B8D9;
     }
 
-.btn__submit {
+/* change background color on hover */
 
-        width: 35%;
-        border: 1px solid #F34CA7;
-
-    }
-
-.btn:hover {
-        background-color: #F34CA7;
-        border: 1px solid #CEBCC6;
-        color: #CEBCC6;
-        cursor: pointer;
-    }
+.btn__secondary:hover {
+            background-color: #CEBCC6;
+        }
 
 /* _wrapper.css */
 
@@ -871,9 +902,6 @@ a {
         /* visabillity */
         opacity: 0;
         visibility: collapse;
-        /* text styling */
-        text-align: center;
-        color: #FAF5F8;
         /* opacity animation */
         -webkit-transition: opacity 1s ease-in-out;
         -o-transition: opacity 1s ease-in-out;
@@ -892,21 +920,6 @@ a {
             /* position */
             float: left
     }
-    }
-
-/* menu item */
-
-.navbar__menu__item {
-            display: block;
-        }
-
-/* on larger screens display menu items inline */
-
-@media (min-width: 600px) {
-
-.navbar__menu__item {
-                display: inline
-        }
     }
 
 /* extend menu */
@@ -1299,9 +1312,9 @@ Instead edit gulp/templates/sprite */
     }
 
 .overlay--right {
-            right: 10px;
-            float: right;
-        }
+        right: 10px;
+        float: right;
+    }
 
 .overlay--bottom {
         bottom: 0;

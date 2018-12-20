@@ -1,48 +1,52 @@
 /* _text.css */
 
 .text {
-    
+
+    /* text color: */
     &--pink {
         color: $mainPink-Darker;
     }
-    
+
     &--white {
         color: $white-Blue;
     }
-    
+
     &--grey {
         color: $grey-Blue;
     }
-    
+
     &--orange {
         color: $mainOrange-Darker;
     }
-    
+
     &--brighter-blue {
         color: $mainBlue-Dark;
     }
-    
+
+    /* text align: */
     &--left {
         text-align: left;
     }
-    
+
     &--right {
         text-align: right;
     }
-    
+
     &--center {
         text-align: center;
     }
-    
-    &--center-atSmall{
-        @mixin atSmall{
+
+    /* center text on larger screens */
+    &--center-atSmall {
+        @mixin atSmall {
             text-align: center;
         }
     }
-    
-    &--small{
-        font-size: 0.8rem;
 
+    /* font size */
+    &--small {
+        font-size: 0.8rem;
+        /* larger font size on larger screens : */
         @mixin atSmall {
             font-size: 1.0rem;
         }

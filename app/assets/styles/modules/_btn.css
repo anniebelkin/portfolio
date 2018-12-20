@@ -1,50 +1,71 @@
 /* _btn.css */
 
 .btn {
-    background-color: $brown-Pink;
-    border: 1px solid $mainPink-Darker;
-    color: $mainPink-Darker;
-    padding: 5px 10px;
+    /* spacing */
+    padding: 5px 15px;
     margin: 15px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    /* border */
+    border: 1px solid $mainPink-Darker;
+    /* font style */
+    text-align: center;
+    text-shadow:
+        -0.5px -0.5px 0 $mainPink,
+        0.5px -0.5px 0 black,
+        -0.5px 0.5px 0 black,
+        0.5px 0.5px 0 black;
+    color: $white-Pink;
 
-    @mixin atSmall {
-        padding: 5px 15px;
-    }
-
-    @mixin atMedium {
-        padding: 5px 20px;
-    }
-
-    @mixin atLarge {
-        padding: 5px 25px;
-    }
-
-    &__logo {
-        max-height: 30px;
-        ;
-        width: auto;
-        padding: 0 2px;
-    }
-
-    &__secondary {
-
-        background-color: transparent;
-        border: 1px solid $mainPink;
-        color: $mainPink;
-    }
-
-    &__submit {
-
-        width: 35%;
-        border: 1px solid $mainPink-Darker;
-
-    }
-
+    /* change font color on hover */
     &:hover {
-        background-color: $mainPink-Darker;
-        border: 1px solid $brown-Pink;
-        color: $brown-Pink;
-        cursor: pointer;
+        color: $mainPink-Dark;
     }
+
+    &__link {
+        display: block;
+        /* spacing */
+        padding: 5px;
+        margin: 0;
+        /* no border */
+        border: none;
+        /* font size */
+        font-size: 1.0rem;
+
+        /* on larder screens */
+        @mixin atSmall {
+            /* display links inline */
+            display: inline;
+            /* seperate links from each other */
+            border-right: 1px solid $white-Pink;
+            padding: 0 5px 0 0;
+        }
+
+    }
+
+    /* primery buttons */
+    &__primery {
+        /* size */
+        min-width: 30%;
+        /* shadow */
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2),
+            0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        /* background color */
+        background-color: $mainPink-Dark;
+
+        /* change background color on hover */
+        &:hover {
+            background-color: $white-Pink;
+        }
+    }
+
+    /* secondary buttons */
+    &__secondary {
+        /* background color */
+        background-color: transparent;
+
+        /* change background color on hover */
+        &:hover {
+            background-color: $brown-Pink;
+        }
+    }
+
 }

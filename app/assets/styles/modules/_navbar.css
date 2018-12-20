@@ -46,9 +46,6 @@
         /* visabillity */
         opacity: 0;
         visibility: collapse;
-        /* text styling */
-        text-align: center;
-        color: $white-Pink;
         /* opacity animation */
         transition: opacity 1s ease-in-out;
 
@@ -59,16 +56,6 @@
             visibility: visible;
             /* position */
             float: left;
-        }
-
-        /* menu item */
-        &__item {
-            display: block;
-
-            /* on larger screens display menu items inline */
-            @mixin atSmall {
-                display: inline;
-            }
         }
 
         /* extend menu */
