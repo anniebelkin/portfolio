@@ -7,6 +7,8 @@
     /* border */
     border: 1px solid $mainPink-Darker;
     /* font style */
+    font-weight: bold;
+    letter-spacing: 0.5px;
     text-align: center;
     text-shadow:
         -0.5px -0.5px 0 $mainPink,
