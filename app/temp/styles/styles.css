@@ -600,7 +600,8 @@ a {
 
 /* change font color on hover */
 
-.btn:hover {
+.btn:hover,
+    .btn:active {
         color: #F075B9;
     }
 

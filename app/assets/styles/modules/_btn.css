@@ -18,7 +18,8 @@
     color: $white-Pink;
 
     /* change font color on hover */
-    &:hover {
+    &:hover,
+    &:active {
         color: $mainPink-Dark;
     }
 
